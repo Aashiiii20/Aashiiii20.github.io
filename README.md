@@ -26,21 +26,21 @@ The site is a plain static folder, so any host works.
 
 ### GitHub Pages (personal site URL)
 
-Naming the repo `<your-handle>.github.io` serves it from the root of your own
-github.io domain. Run these signed in as **your own** GitHub account:
+Naming the repo `Aashiiii20.github.io` serves it from the root of your own
+github.io domain. Run these on the laptop signed in to the **Aashiiii20** GitHub account:
 
 ```bash
-# 1. create an EMPTY public repo named <your-handle>.github.io at github.com/new
+# 1. create an EMPTY public repo named Aashiiii20.github.io at github.com/new
 #    (do not add a README, licence or .gitignore)
 
 # 2. from this folder:
-git remote add origin https://github.com/<your-handle>/<your-handle>.github.io.git
+git remote add origin https://github.com/Aashiiii20/Aashiiii20.github.io.git
 git branch -M main
 git push -u origin main
 ```
 
 Pages builds automatically for a `<handle>.github.io` repo. The site is live at
-`https://<your-handle>.github.io` within a minute or two. If it does not appear,
+`https://aashiiii20.github.io` within a minute or two. If it does not appear,
 open Settings, then Pages, and set Source to "Deploy from a branch", branch
 `main`, folder `/ (root)`.
 
