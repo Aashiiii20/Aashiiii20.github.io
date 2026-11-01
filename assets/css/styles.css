@@ -295,6 +295,19 @@ main,.nav,.footer{position:relative;z-index:2}
 .reveal.is-in{opacity:1;transform:none}
 
 /* ---------- reviews ---------- */
+.section--reviews{
+  background:
+    radial-gradient(900px 480px at 12% 0%,rgba(208,140,80,.20),transparent 62%),
+    radial-gradient(700px 420px at 92% 100%,rgba(233,185,138,.10),transparent 60%),
+    linear-gradient(180deg,#1a120b,#110c08);
+  border-block:1px solid rgba(208,140,80,.38);
+}
+.section--reviews .section__eyebrow{color:var(--accent-2)}
+.section--reviews .review{background:rgba(208,140,80,.06);border-color:rgba(208,140,80,.24)}
+.section--reviews .review:hover{border-color:rgba(208,140,80,.5)}
+.section--reviews .review--feature{background:linear-gradient(135deg,rgba(208,140,80,.24),rgba(208,140,80,.06) 70%);border-color:rgba(208,140,80,.48);box-shadow:0 24px 60px -30px rgba(208,140,80,.45)}
+.section--reviews .review blockquote::before{color:rgba(208,140,80,.38)}
+.section--reviews .review__by{border-top-color:rgba(208,140,80,.22)}
 .reviews{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
 .review{margin:0;display:flex;flex-direction:column;gap:16px;padding:30px 30px 28px;border-radius:var(--r-lg);border:1px solid var(--line);background:var(--surface);transition:border-color .3s}
 .review:hover{border-color:var(--line-strong)}
