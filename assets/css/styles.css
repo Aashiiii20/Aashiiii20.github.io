@@ -319,7 +319,6 @@ main,.nav,.footer{position:relative;z-index:2}
   .nav__links a.btn{margin-top:14px;justify-content:center;border-bottom:0}
   .nav__toggle{display:flex}
   .nav{background:rgba(11,10,9,.8);backdrop-filter:blur(14px)}
-  .stats{grid-template-columns:repeat(2,1fr)}
   .skills{grid-template-columns:1fr}
   .timeline::before{left:5px}
   .tl{grid-template-columns:1fr}
@@ -328,6 +327,7 @@ main,.nav,.footer{position:relative;z-index:2}
   .tl__card::before{left:-38px;top:24px}
 }
 @media (max-width:620px){
+  .stats{grid-template-columns:1fr}
   body{font-size:16px}
   .cards{grid-template-columns:1fr}
   .contact__links{grid-template-columns:1fr}
