@@ -150,7 +150,7 @@ main,.nav,.footer{position:relative;z-index:2}
 
 /* ---------- stats ---------- */
 .stats{
-  display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
   margin-top:clamp(44px,6vw,72px);
   background:var(--line);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;
 }
