@@ -327,6 +327,8 @@ main,.nav,.footer{position:relative;z-index:2}
 .review__by{margin-top:auto;padding-top:16px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:2px}
 .review__name{font-size:15.5px;font-weight:500;color:var(--text)}
 .review__meta{font-family:var(--ff-mono);font-size:11.5px;letter-spacing:.05em;color:var(--accent-2)}
+.review__meta a{color:inherit;text-decoration:none;border-bottom:1px solid rgba(208,140,80,.45);transition:color .2s,border-color .2s}
+.review__meta a:hover,.review__meta a:focus-visible{color:var(--text);border-bottom-color:var(--accent)}
 
 /* ============ responsive ============ */
 @media (max-width:1024px){
