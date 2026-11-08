@@ -34,8 +34,8 @@ page = (
     "<title>Aashiya Bi</title>\n"
     '<link rel="preconnect" href="https://fonts.googleapis.com" />\n'
     '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />\n'
-    '<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600'
-    '&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />\n'
+    '<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600'
+    '&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />\n'
     "<style>\n" + css + "\n</style>\n"
     + body.strip() + "\n"
     "<script>\n" + js + "\n</script>\n"

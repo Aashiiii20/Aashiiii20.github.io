@@ -98,7 +98,7 @@
   }
 
   /* ---- active section in nav ---- */
-  var sectionIds = ['about', 'services', 'work', 'experience', 'skills', 'research'];
+  var sectionIds = ['about', 'services', 'work', 'research', 'reviews'];
   var navMap = {};
   sectionIds.forEach(function (id) {
     var a = document.querySelector('.nav__links a[href="#' + id + '"]');
