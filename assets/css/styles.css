@@ -462,3 +462,9 @@ main,.nav,.footer{position:relative;z-index:2}
 .review blockquote p{font-family:var(--ff-sans);font-weight:400;font-size:clamp(16.5px,1.3vw,18px);line-height:1.65;letter-spacing:0;color:var(--text)}
 .review--feature blockquote p{font-family:var(--ff-display);font-weight:400;font-size:clamp(19px,1.75vw,23px);line-height:1.55;letter-spacing:-.01em;max-width:60ch}
 .review--feature blockquote p{font-family:var(--ff-sans);font-size:clamp(18px,1.55vw,21px);line-height:1.6;letter-spacing:0}
+
+/* hero badges: transparent glass over the photo */
+.chip{background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.7);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.chip strong{color:#fff}
+.chip span{color:rgba(255,255,255,.85)}
+.chip strong,.chip span{text-shadow:0 1px 8px rgba(20,16,12,.35)}
