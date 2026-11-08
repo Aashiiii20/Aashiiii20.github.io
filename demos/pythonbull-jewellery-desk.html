@@ -1,0 +1,584 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>PythonBull Jewellery Desk</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script src="https://unpkg.com/lucide@0.462.0/dist/umd/lucide.min.js"></script>
+<script>
+tailwind.config={theme:{container:{center:true,padding:"2rem",screens:{"2xl":"1400px"}},extend:{fontFamily:{sans:["Inter","system-ui","sans-serif"]},colors:{
+border:"hsl(var(--border))",input:"hsl(var(--input))",ring:"hsl(var(--ring))",background:"hsl(var(--background))",foreground:"hsl(var(--foreground))",
+primary:{DEFAULT:"hsl(var(--primary))",foreground:"hsl(var(--primary-foreground))"},
+muted:{DEFAULT:"hsl(var(--muted))",foreground:"hsl(var(--muted-foreground))"},
+card:{DEFAULT:"hsl(var(--card))",foreground:"hsl(var(--card-foreground))"},
+destructive:{DEFAULT:"hsl(var(--destructive))"}},
+borderRadius:{lg:"var(--radius)",md:"calc(var(--radius) - 2px)",sm:"calc(var(--radius) - 4px)"}}}};
+</script>
+<style>
+:root{--background:40 33% 98%;--foreground:220 20% 15%;--card:0 0% 100%;--primary:220 20% 15%;--primary-foreground:40 33% 98%;--muted:220 14% 96%;--muted-foreground:220 10% 46%;--border:220 13% 91%;--input:220 13% 91%;--ring:180 13% 52%;--destructive:0 72% 51%;--radius:.75rem;--done:142 71% 45%;--nav:#b97f5e}
+body{background:hsl(var(--background));color:hsl(var(--foreground));font-family:Inter,system-ui,sans-serif}
+*{border-color:hsl(var(--border))}
+.container{padding-left:max(16px,env(safe-area-inset-left,0px))!important;padding-right:max(16px,env(safe-area-inset-right,0px))!important}
+@media(min-width:640px){.container{padding-left:2rem!important;padding-right:2rem!important}}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--nav)}
+nav.top{top:env(safe-area-inset-top,0px)}
+.green{background:hsl(var(--done));color:#fff}.green:hover{background:hsl(var(--done)/.9)}
+select.sel{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .6rem center;padding-right:1.8rem}
+.icon-btn{height:2rem;width:2rem;display:inline-flex;align-items:center;justify-content:center;border-radius:calc(var(--radius) - 2px)}
+.icon-btn:hover{background:hsl(var(--muted))}
+.icon-btn svg,.ic svg{width:1rem;height:1rem}
+:focus-visible{outline:2px solid hsl(var(--ring));outline-offset:2px}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:no-preference){.fade{animation:fade .25s ease-out}}
+</style>
+
+<nav class="top border-b border-border sticky z-50 text-white" style="background-color:var(--nav)">
+  <div class="container flex items-center justify-between h-16">
+    <a class="flex items-center gap-3" href="#">
+      <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNzM5LjEgMzI4LjUiPgogIDwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAzMC41LjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiAyLjEuNCBCdWlsZCAxMzgpICAtLT4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLnN0MCB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQyKTsKICAgICAgfQoKICAgICAgLnN0MSB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQxKTsKICAgICAgfQoKICAgICAgLnN0MiB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQ5KTsKICAgICAgfQoKICAgICAgLnN0MyB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQzKTsKICAgICAgfQoKICAgICAgLnN0NCB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQ2KTsKICAgICAgfQoKICAgICAgLnN0NSB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQ4KTsKICAgICAgfQoKICAgICAgLnN0NiB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQ3KTsKICAgICAgfQoKICAgICAgLnN0NyB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQ1KTsKICAgICAgfQoKICAgICAgLnN0OCB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQ0KTsKICAgICAgfQoKICAgICAgLnN0OSB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQxOCk7CiAgICAgIH0KCiAgICAgIC5zdDEwIHsKICAgICAgICBmaWxsOiB1cmwoI2xpbmVhci1ncmFkaWVudDEzKTsKICAgICAgfQoKICAgICAgLnN0MTEgewogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50MTIpOwogICAgICB9CgogICAgICAuc3QxMiB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQxNSk7CiAgICAgIH0KCiAgICAgIC5zdDEzIHsKICAgICAgICBmaWxsOiB1cmwoI2xpbmVhci1ncmFkaWVudDE2KTsKICAgICAgfQoKICAgICAgLnN0MTQgewogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50MTEpOwogICAgICB9CgogICAgICAuc3QxNSB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQxMCk7CiAgICAgIH0KCiAgICAgIC5zdDE2IHsKICAgICAgICBmaWxsOiB1cmwoI2xpbmVhci1ncmFkaWVudDE3KTsKICAgICAgfQoKICAgICAgLnN0MTcgewogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50MTQpOwogICAgICB9CgogICAgICAuc3QxOCB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQxOSk7CiAgICAgIH0KCiAgICAgIC5zdDE5IHsKICAgICAgICBmaWxsOiB1cmwoI2xpbmVhci1ncmFkaWVudDIwKTsKICAgICAgfQoKICAgICAgLnN0MjAgewogICAgICAgIGZpbGw6ICMyMzFmMjA7CiAgICAgIH0KCiAgICAgIC5zdDIxIHsKICAgICAgICBmaWxsOiB1cmwoI2xpbmVhci1ncmFkaWVudCk7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudCIgeDE9IjU5My4yIiB5MT0iLTcyLjUiIHgyPSItMjUuNiIgeTI9IjI4NC44IiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMzI5LjEpIHNjYWxlKDEgLTEpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzQ1NDU0NSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwMTAxMDEiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudDEiIHgxPSI2MjkuNSIgeTE9Ii05LjUiIHgyPSIxMC43IiB5Mj0iMzQ3LjgiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAzMjkuMSkgc2NhbGUoMSAtMSkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjNDU0NTQ1Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAxMDEwMSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50MiIgeDE9IjY1OC45IiB5MT0iNDEuMyIgeDI9IjQwLjEiIHkyPSIzOTguNiIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMyOS4xKSBzY2FsZSgxIC0xKSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM0NTQ1NDUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDEwMTAxIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQzIiB4MT0iNjg0LjQiIHkxPSI4NS42IiB4Mj0iNjUuNiIgeTI9IjQ0Mi45IiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMzI5LjEpIHNjYWxlKDEgLTEpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzQ1NDU0NSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwMTAxMDEiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudDQiIHgxPSI3NTYuNyIgeTE9IjIxMC43IiB4Mj0iMTM3LjkiIHkyPSI1NjgiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAzMjkuMSkgc2NhbGUoMSAtMSkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjNDU0NTQ1Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAxMDEwMSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50NSIgeDE9IjU5Ni40IiB5MT0iLTY2LjkiIHgyPSItMjIuNCIgeTI9IjI5MC40IiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMzI5LjEpIHNjYWxlKDEgLTEpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzQ1NDU0NSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwMTAxMDEiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudDYiIHgxPSI2MzcuNSIgeTE9IjQuMiIgeDI9IjE4LjciIHkyPSIzNjEuNSIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMyOS4xKSBzY2FsZSgxIC0xKSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM0NTQ1NDUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDEwMTAxIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQ3IiB4MT0iNjUxLjciIHkxPSIyOC45IiB4Mj0iMzIuOSIgeTI9IjM4Ni4yIiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMzI5LjEpIHNjYWxlKDEgLTEpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzQ1NDU0NSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwMTAxMDEiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudDgiIHgxPSI2OTcuOSIgeTE9IjEwOC45IiB4Mj0iNzkuMSIgeTI9IjQ2Ni4yIiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMzI5LjEpIHNjYWxlKDEgLTEpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzQ1NDU0NSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwMTAxMDEiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudDkiIHgxPSI2OTguOCIgeTE9IjExMC41IiB4Mj0iODAiIHkyPSI0NjcuOCIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMyOS4xKSBzY2FsZSgxIC0xKSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM0NTQ1NDUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDEwMTAxIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQxMCIgeDE9IjUyOS4xIiB5MT0iLTE4My41IiB4Mj0iLTg5LjciIHkyPSIxNzMuOCIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMyOS4xKSBzY2FsZSgxIC0xKSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM0NTQ1NDUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDEwMTAxIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQxMSIgeDE9IjUzOS4xIiB5MT0iLTE2Ni4xIiB4Mj0iLTc5LjciIHkyPSIxOTEuMiIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMyOS4xKSBzY2FsZSgxIC0xKSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM0NTQ1NDUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDEwMTAxIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQxMiIgeDE9IjU0OS40IiB5MT0iLTE0OC4zIiB4Mj0iLTY5LjQiIHkyPSIyMDkiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAzMjkuMSkgc2NhbGUoMSAtMSkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjNDU0NTQ1Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAxMDEwMSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50MTMiIHgxPSI1NTguOSIgeTE9Ii0xMzEuOSIgeDI9Ii01OS45IiB5Mj0iMjI1LjQiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAzMjkuMSkgc2NhbGUoMSAtMSkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjNDU0NTQ1Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAxMDEwMSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50MTQiIHgxPSI1NjkuNCIgeTE9Ii0xMTMuNiIgeDI9Ii00OS40IiB5Mj0iMjQzLjciIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAzMjkuMSkgc2NhbGUoMSAtMSkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjNDU0NTQ1Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAxMDEwMSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50MTUiIHgxPSI1NzYuMiIgeTE9Ii0xMDEuOSIgeDI9Ii00Mi42IiB5Mj0iMjU1LjQiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAzMjkuMSkgc2NhbGUoMSAtMSkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjNDU0NTQ1Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAxMDEwMSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50MTYiIHgxPSI1ODYuNCIgeTE9Ii04NC4yIiB4Mj0iLTMyLjQiIHkyPSIyNzMuMSIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMyOS4xKSBzY2FsZSgxIC0xKSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM0NTQ1NDUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDEwMTAxIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQxNyIgeDE9IjU5MiIgeTE9Ii03NC41IiB4Mj0iLTI2LjgiIHkyPSIyODIuOCIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMyOS4xKSBzY2FsZSgxIC0xKSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM0NTQ1NDUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDEwMTAxIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQxOCIgeDE9IjYwMy4yIiB5MT0iLTU1LjIiIHgyPSItMTUuNiIgeTI9IjMwMi4xIiBncmFkaWVudFRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMzI5LjEpIHNjYWxlKDEgLTEpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzQ1NDU0NSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwMTAxMDEiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudDE5IiB4MT0iNjEzLjQiIHkxPSItMzcuNCIgeDI9Ii01LjQiIHkyPSIzMTkuOSIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMyOS4xKSBzY2FsZSgxIC0xKSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM0NTQ1NDUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDEwMTAxIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQyMCIgeDE9IjYyMy45IiB5MT0iLTE5LjMiIHgyPSI1LjEiIHkyPSIzMzgiIGdyYWRpZW50VHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAzMjkuMSkgc2NhbGUoMSAtMSkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjNDU0NTQ1Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAxMDEwMSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPGc+CiAgICA8cGF0aCBjbGFzcz0ic3QyMCIgZD0iTTM0LjMsMEgwdjE0OC45aDE2LjJsLjQtNzEuMWgxMS43YzMyLjUsMCw1NC0xMi45LDUzLjgtNDEuOUM4MS45LDkuNiw1OC45LDAsMzQuNCwwaDBaTTI4LjYsNzQuMWgtMTIuMWwtLjQtNzAuM2gxOC45YzE4LjUsMCwzMS42LDksMzEuOCwzMi4yLjIsMjUuNy0xNSwzOC4yLTM4LjIsMzguMmgwWiIvPgogICAgPHBvbHlnb24gY2xhc3M9InN0MjAiIHBvaW50cz0iMjAzLjkgMCAxOTUuMyAwIDE1My42IDU2LjMgMTExLjUgMCA5MS42IDAgMTQwLjMgNjUuMSAxNDAuMyAxNDguOSAxNTYuNSAxNDguOSAxNTYuNSA2NC4xIDIwMy45IDAiLz4KICAgIDxwb2x5Z29uIGNsYXNzPSJzdDIwIiBwb2ludHM9IjI1OC44IDE0OC45IDI3NSAxNDguOSAyNzUgNy44IDMyMC4yIDcuOCAzMjAuMiAwIDI3NSAwIDI1OC44IDAgMjEzLjQgMCAyMTMuNCA3LjggMjU4LjggNy44IDI1OC44IDE0OC45Ii8+CiAgICA8cG9seWdvbiBjbGFzcz0ic3QyMCIgcG9pbnRzPSIzNDYgNjQgNDM3LjQgNjQgNDM3LjQgMTQ4LjkgNDUzLjYgMTQ4LjkgNDUzLjYgMCA0MzcuNCAwIDQzNy40IDU2LjIgMzQ2IDU2LjIgMzQ2IDAgMzI5LjggMCAzMjkuOCAxNDguOSAzNDYgMTQ4LjkgMzQ2IDY0Ii8+CiAgICA8cG9seWdvbiBjbGFzcz0ic3QyMCIgcG9pbnRzPSI3MzEuMyAwIDczMS4zIDEyNS4yIDY0MS45IDAgNjMwLjEgMCA2MjIuNCAwIDYyMi4zIDAgNjIyLjMgMTQ4LjkgNjMwLjEgMTQ4LjkgNjMwLjEgMTAuNyA3MjkuNCAxNDguOSA3MzEuMyAxNDguOSA3MzQuMyAxNDguOSA3MzkuMSAxNDguOSA3MzkuMSAwIDczMS4zIDAiLz4KICAgIDxwYXRoIGNsYXNzPSJzdDIwIiBkPSJNMjY3LjIsMTkwLjhjMC0yNy43LTI1LjktNDEuMS01NC4zLTQxLjYsMTUuNS0yLjgsMzItMTMuOSwzMi0zMS41cy0xOS43LTI4LjMtNDMuNS0yOC4zaC0zMS42djE0OWgzNS41YzM3LjgsMCw2MS44LTE2LDYxLjgtNDcuNmguMVpNMTg2LjEsOTMuMWgxMy43YzIyLjIsMCwzMS40LDguNiwzMS40LDI0LjhzLTEzLjcsMzAuMS0zNS4xLDMwLjFoLTkuOXYtNTQuOWgtLjFaTTIwNi45LDIzNC43aC0yMC45di04M2gxNS42YzMzLjksMCw0OS4yLDEyLjQsNDkuMiwzOS43cy0xNy4yLDQzLjMtNDMuOSw0My4zaDBaIi8+CiAgICA8cGF0aCBjbGFzcz0ic3QyMCIgZD0iTTM4Ni43LDE3OC41YzAsMzYuMy0xNC44LDU1LjYtNDQsNTUuNnMtMzguMy0yMS4yLTM4LjMtNTIuNHYtOTIuNGgtMTZ2ODguNWMwLDQwLjQsMTQuNCw2MC41LDU0LjQsNjAuNXM1MS43LTIxLjUsNTEuNy02MC4zdi04OC43aC03Ljh2ODkuMWgwWiIvPgogICAgPHBvbHlnb24gY2xhc3M9InN0MjAiIHBvaW50cz0iNDg0LjEgMjMwLjcgNDIzLjkgMjMwLjcgNDIzLjkgODkuMyA0MDcuNyA4OS4zIDQwNy43IDIzOC41IDQwOC45IDIzOC41IDQyMy45IDIzOC41IDQ4NC4xIDIzOC41IDQ4NC4xIDIzMC43Ii8+CiAgICA8cGF0aCBjbGFzcz0ic3QyMCIgZD0iTTQ5My41LDExNi45YzQuMiw3LjEsOS42LDEyLjgsMTYuMiwxNi44di00NC40aC0xNi4ydjI3LjZaIi8+CiAgICA8cGF0aCBjbGFzcz0ic3QyMCIgZD0iTTUzOC4xLDBjLTQyLjcsMC03NC44LDMyLTc0LjgsNzQuNHMxMS40LDQ3LjgsMzAuMyw2MS4xdjEwM2g3NS42di03LjhoLTU5LjR2LTg2LjdjOC42LDMuMiwxOC4xLDQuOSwyOC40LDQuOSw0My41LDAsNzQuNi0zMy4xLDc0LjYtNzQuNlM1ODIuNCwwLDUzOC4yLDBoMFpNNTM4LjEsMTQ1LjJjLTEwLjgsMC0yMC4zLTIuNC0yOC40LTYuOC02LjMtMy41LTExLjgtOC4zLTE2LjItMTQuMi05LjEtMTIuMi0xNC0yOS4xLTE0LTQ5LjgsMC00My42LDIyLTcwLjgsNTguNi03MC44czU4LjIsMjcuMyw1OC4yLDcwLjgtMjIsNzAuOC01OC4yLDcwLjhoMFoiLz4KICAgIDxwYXRoIGNsYXNzPSJzdDIwIiBkPSJNMTc1LjIsMzA2LjhjLjgtMS44LDEuOS0zLjIsMy40LTQuMSwxLjUtMSwzLjItMS41LDUuMi0xLjVzMi42LjIsMy43LjdjMS4xLjUsMiwxLjEsMi44LDEuOXMxLjMsMS45LDEuNywzLjF2LjVoMy45di0uMmMtLjQtMS45LTEuMi0zLjUtMi4zLTQuOXMtMi41LTIuNS00LjItMy4zLTMuNi0xLjItNS42LTEuMi01LjIuNi03LjIsMS45LTMuNiwzLTQuNyw1LjNjLTEuMSwyLjMtMS43LDUtMS43LDguMWgwYzAsMy4xLjYsNS44LDEuNyw4LjEsMS4xLDIuMywyLjcsNC4xLDQuNyw1LjMsMiwxLjMsNC40LDEuOSw3LjIsMS45czQtLjQsNS42LTEuMmMxLjctLjgsMy4xLTEuOSw0LjItMy4zLDEuMS0xLjQsMS45LTMuMSwyLjItNXYtLjJoLTMuN3YuMmMtLjUsMS4zLTEuMSwyLjQtMS45LDMuMy0uOC45LTEuNywxLjYtMi44LDItMS4xLjUtMi4zLjctMy43LjctMiwwLTMuNy0uNS01LjEtMS41LTEuNS0xLTIuNi0yLjQtMy40LTQuMi0uOC0xLjgtMS4yLTMuOS0xLjItNi4zaDBjMC0yLjQuNC00LjUsMS4yLTYuM3YuMloiLz4KICAgIDxwYXRoIGNsYXNzPSJzdDIwIiBkPSJNMjMxLjEsMjk5LjZjLTItMS4yLTQuNS0xLjktNy4zLTEuOXMtNS4yLjYtNy4zLDEuOWMtMi4xLDEuMi0zLjYsMy00LjgsNS4zLTEuMSwyLjMtMS43LDUtMS43LDguMWgwYzAsMy4yLjYsNS45LDEuNyw4LjIsMS4xLDIuMywyLjcsNC4xLDQuNyw1LjMsMi4xLDEuMiw0LjUsMS45LDcuMywxLjlzNS4yLS42LDcuMy0xLjljMi0xLjIsMy42LTMsNC43LTUuM3MxLjctNSwxLjctOC4yaDBjMC0zLjItLjYtNS45LTEuNy04LjItMS4xLTIuMy0yLjctNC4xLTQuNy01LjNoMFpNMjMzLjgsMzEzLjFjMCwyLjQtLjQsNC41LTEuMiw2LjMtLjgsMS44LTEuOSwzLjItMy40LDQuMS0xLjUsMS0zLjIsMS41LTUuMywxLjVzLTMuOC0uNS01LjMtMS41LTIuNi0yLjQtMy40LTQuMWMtLjgtMS44LTEuMi0zLjktMS4yLTYuM2gwYzAtMi41LjQtNC42LDEuMi02LjQuOC0xLjgsMi0zLjIsMy40LTQuMSwxLjUtMSwzLjItMS41LDUuMy0xLjVzMy44LjUsNS4zLDEuNSwyLjYsMi4zLDMuNCw0LjFjLjgsMS44LDEuMiwzLjksMS4yLDYuM2gwWiIvPgogICAgPHBvbHlnb24gY2xhc3M9InN0MjAiIHBvaW50cz0iMjczLjMgMzIxLjcgMjczLjIgMzIxLjcgMjU2LjggMjk4LjMgMjUzLjIgMjk4LjMgMjUzLjIgMzI4IDI1Ni45IDMyOCAyNTYuOSAzMDQuNSAyNTcgMzA0LjUgMjczLjMgMzI4IDI3Ni45IDMyOCAyNzYuOSAyOTguMyAyNzMuMyAyOTguMyAyNzMuMyAzMjEuNyIvPgogICAgPHBhdGggY2xhc3M9InN0MjAiIGQ9Ik0zMTAuNywzMTMuMmMtMS4zLS43LTIuOS0xLjMtNS0xLjdsLTMuMy0uN2MtMS45LS40LTMuNC0xLTQuMy0xLjhzLTEuNC0xLjgtMS40LTNoMGMwLTEsLjMtMS44LjgtMi41czEuMy0xLjMsMi4zLTEuN2MxLS40LDIuMS0uNiwzLjUtLjZzMi40LjIsMy4zLjZjMSwuNCwxLjcuOSwyLjMsMS42LjYuNywxLDEuNiwxLjEsMi42di4zaDMuN3YtLjNjLS4xLTEuNi0uNi0zLTEuNi00LjMtLjktMS4yLTIuMS0yLjItMy43LTIuOS0xLjUtLjctMy4zLTEtNS4yLTFzLTMuOC40LTUuNCwxLjEtMi44LDEuNy0zLjcsMi45Yy0uOSwxLjItMS4zLDIuNy0xLjQsNC4zaDBjMCwyLjIuNywzLjksMi4xLDUuMywxLjQsMS4zLDMuNSwyLjMsNi40LDNsMy4zLjdjMiwuNSwzLjUsMS4xLDQuNCwxLjlzMS40LDEuOCwxLjQsMy4xaDBjMCwxLS4zLDEuOS0uOSwyLjctLjYuOC0xLjQsMS4zLTIuNCwxLjctMSwuNC0yLjMuNi0zLjcuNnMtMi43LS4yLTMuOC0uNmMtMS4xLS40LTItLjktMi42LTEuNy0uNy0uNy0xLjEtMS42LTEuMi0yLjZ2LS4zaC0zLjd2LjNjLjEsMS43LjcsMy4yLDEuNiw0LjQsMSwxLjIsMi4yLDIuMiwzLjksMi45LDEuNi43LDMuNSwxLDUuNywxczQuMi0uMyw1LjktMWMxLjYtLjcsMi45LTEuNywzLjgtM3MxLjMtMi44LDEuMy00LjZoMGMwLTEuNS0uMy0yLjgtLjktMy45cy0xLjUtMi0yLjgtMi43aC4yWiIvPgogICAgPHBhdGggY2xhc3M9InN0MjAiIGQ9Ik0zNDkuNywzMTcuM2MwLDEuNS0uMywyLjktLjksNC0uNiwxLjItMS41LDIuMS0yLjcsMi43LTEuMi43LTIuNywxLTQuNCwxcy0zLjItLjMtNC40LTFjLTEuMi0uNy0yLjEtMS42LTIuOC0yLjctLjYtMS4yLTEtMi41LTEtNHYtMTloLTMuN3YxOS4zYzAsMi4yLjUsNC4xLDEuNCw1LjdzMi4zLDIuOSw0LjEsMy44YzEuOC45LDMuOSwxLjQsNi4zLDEuNHM0LjYtLjUsNi4zLTEuNGMxLjgtLjksMy4xLTIuMiw0LTMuOC45LTEuNiwxLjQtMy41LDEuNC01Ljd2LTE5LjNoLTMuN3YxOWguMVoiLz4KICAgIDxwb2x5Z29uIGNsYXNzPSJzdDIwIiBwb2ludHM9IjM3My45IDI5OC4zIDM3MC4yIDI5OC4zIDM3MC4yIDMyOCAzODguMyAzMjggMzg4LjMgMzI0LjYgMzczLjkgMzI0LjYgMzczLjkgMjk4LjMiLz4KICAgIDxwb2x5Z29uIGNsYXNzPSJzdDIwIiBwb2ludHM9IjM5NyAzMDEuNiA0MDYuNCAzMDEuNiA0MDYuNCAzMjggNDEwLjEgMzI4IDQxMC4xIDMwMS42IDQxOS40IDMwMS42IDQxOS40IDI5OC4zIDM5NyAyOTguMyAzOTcgMzAxLjYiLz4KICAgIDxwYXRoIGNsYXNzPSJzdDIwIiBkPSJNNDQxLjcsMjk4LjNoLTIuN2wtMTEuMSwyOS43aDMuOWwzLTguNWgxMmwzLDguNWgzLjlsLTExLTI5LjdoLTFaTTQzNS45LDMxNi4zbDQuOC0xMy42aDBsNC44LDEzLjZoLTkuNy4xWiIvPgogICAgPHBvbHlnb24gY2xhc3M9InN0MjAiIHBvaW50cz0iNDg4LjIgMzIxLjcgNDg4LjEgMzIxLjcgNDcxLjcgMjk4LjMgNDY4LjEgMjk4LjMgNDY4LjEgMzI4IDQ3MS44IDMyOCA0NzEuOCAzMDQuNSA0NzEuOSAzMDQuNSA0ODguMiAzMjggNDkxLjggMzI4IDQ5MS44IDI5OC4zIDQ4OC4yIDI5OC4zIDQ4OC4yIDMyMS43Ii8+CiAgICA8cGF0aCBjbGFzcz0ic3QyMCIgZD0iTTUxMi41LDMwNi44Yy44LTEuOCwxLjktMy4yLDMuNC00LjEsMS41LTEsMy4yLTEuNSw1LjItMS41czIuNi4yLDMuNy43YzEuMS41LDIsMS4xLDIuOCwxLjlzMS4zLDEuOSwxLjcsMy4xdi41aDMuOXYtLjJjLS40LTEuOS0xLjItMy41LTIuMy00LjlzLTIuNS0yLjUtNC4yLTMuMy0zLjYtMS4yLTUuNi0xLjItNS4yLjYtNy4yLDEuOS0zLjYsMy00LjcsNS4zYy0xLjEsMi4zLTEuNyw1LTEuNyw4LjFoMGMwLDMuMS42LDUuOCwxLjcsOC4xLDEuMSwyLjMsMi43LDQuMSw0LjcsNS4zLDIsMS4zLDQuNCwxLjksNy4yLDEuOXM0LS40LDUuNi0xLjJjMS43LS44LDMuMS0xLjksNC4yLTMuMywxLjEtMS40LDEuOS0zLjEsMi4yLTV2LS4yaC0zLjd2LjJjLS41LDEuMy0xLjEsMi40LTEuOSwzLjMtLjguOS0xLjcsMS42LTIuOCwyLTEuMS41LTIuMy43LTMuNy43LTIsMC0zLjctLjUtNS4xLTEuNS0xLjUtMS0yLjYtMi40LTMuNC00LjItLjgtMS44LTEuMi0zLjktMS4yLTYuM2gwYzAtMi40LjQtNC41LDEuMi02LjN2LjJaIi8+CiAgICA8cG9seWdvbiBjbGFzcz0ic3QyMCIgcG9pbnRzPSI1NTcuNyAzMTEuNiA1NTcuNiAzMTEuNiA1NDkuNSAyOTguMyA1NDUuMiAyOTguMyA1NTUuOCAzMTUuMiA1NTUuOCAzMjggNTU5LjUgMzI4IDU1OS41IDMxNS4yIDU3MCAyOTguMyA1NjUuOCAyOTguMyA1NTcuNyAzMTEuNiIvPgogIDwvZz4KICA8Zz4KICAgIDxwYXRoIGNsYXNzPSJzdDIxIiBkPSJNMzQuMywwSDB2MTQ4LjloMTYuMmwuNC03MS4xaDExLjdjMzIuNSwwLDU0LTEyLjksNTMuOC00MS45QzgxLjksOS42LDU4LjksMCwzNC40LDBoMFpNMjguNiw3NC4xaC0xMi4xbC0uNC03MC4zaDE4LjljMTguNSwwLDMxLjYsOSwzMS44LDMyLjIuMiwyNS43LTE1LDM4LjItMzguMiwzOC4yaDBaIi8+CiAgICA8cG9seWdvbiBjbGFzcz0ic3QxIiBwb2ludHM9IjIwMy45IDAgMTk1LjMgMCAxNTMuNiA1Ni4zIDExMS41IDAgOTEuNiAwIDE0MC4zIDY1LjEgMTQwLjMgMTQ4LjkgMTU2LjUgMTQ4LjkgMTU2LjUgNjQuMSAyMDMuOSAwIi8+CiAgICA8cG9seWdvbiBjbGFzcz0ic3QwIiBwb2ludHM9IjI1OC44IDE0OC45IDI3NSAxNDguOSAyNzUgNy44IDMyMC4yIDcuOCAzMjAuMiAwIDI3NSAwIDI1OC44IDAgMjEzLjQgMCAyMTMuNCA3LjggMjU4LjggNy44IDI1OC44IDE0OC45Ii8+CiAgICA8cG9seWdvbiBjbGFzcz0ic3QzIiBwb2ludHM9IjM0NiA2NCA0MzcuNCA2NCA0MzcuNCAxNDguOSA0NTMuNiAxNDguOSA0NTMuNiAwIDQzNy40IDAgNDM3LjQgNTYuMiAzNDYgNTYuMiAzNDYgMCAzMjkuOCAwIDMyOS44IDE0OC45IDM0NiAxNDguOSAzNDYgNjQiLz4KICAgIDxwb2x5Z29uIGNsYXNzPSJzdDgiIHBvaW50cz0iNzMxLjMgMCA3MzEuMyAxMjUuMiA2NDEuOSAwIDYzMC4xIDAgNjIyLjQgMCA2MjIuMyAwIDYyMi4zIDE0OC45IDYzMC4xIDE0OC45IDYzMC4xIDEwLjcgNzI5LjQgMTQ4LjkgNzMxLjMgMTQ4LjkgNzM0LjMgMTQ4LjkgNzM5LjEgMTQ4LjkgNzM5LjEgMCA3MzEuMyAwIi8+CiAgICA8cGF0aCBjbGFzcz0ic3Q3IiBkPSJNMjY3LjIsMTkwLjhjMC0yNy43LTI1LjktNDEuMS01NC4zLTQxLjYsMTUuNS0yLjgsMzItMTMuOSwzMi0zMS41cy0xOS43LTI4LjMtNDMuNS0yOC4zaC0zMS42djE0OWgzNS41YzM3LjgsMCw2MS44LTE2LDYxLjgtNDcuNmguMVpNMTg2LjEsOTMuMWgxMy43YzIyLjIsMCwzMS40LDguNiwzMS40LDI0LjhzLTEzLjcsMzAuMS0zNS4xLDMwLjFoLTkuOXYtNTQuOWgtLjFaTTIwNi45LDIzNC43aC0yMC45di04M2gxNS42YzMzLjksMCw0OS4yLDEyLjQsNDkuMiwzOS43cy0xNy4yLDQzLjMtNDMuOSw0My4zaDBaIi8+CiAgICA8cGF0aCBjbGFzcz0ic3Q0IiBkPSJNMzg2LjcsMTc4LjVjMCwzNi4zLTE0LjgsNTUuNi00NCw1NS42cy0zOC4zLTIxLjItMzguMy01Mi40di05Mi40aC0xNnY4OC41YzAsNDAuNCwxNC40LDYwLjUsNTQuNCw2MC41czUxLjctMjEuNSw1MS43LTYwLjN2LTg4LjdoLTcuOHY4OS4xaDBaIi8+CiAgICA8cG9seWdvbiBjbGFzcz0ic3Q2IiBwb2ludHM9IjQ4NC4xIDIzMC43IDQyMy45IDIzMC43IDQyMy45IDg5LjMgNDA3LjcgODkuMyA0MDcuNyAyMzguNSA0MDguOSAyMzguNSA0MjMuOSAyMzguNSA0ODQuMSAyMzguNSA0ODQuMSAyMzAuNyIvPgogICAgPHBhdGggY2xhc3M9InN0NSIgZD0iTTQ5My41LDExNi45YzQuMiw3LjEsOS42LDEyLjgsMTYuMiwxNi44di00NC40aC0xNi4ydjI3LjZaIi8+CiAgICA8cGF0aCBjbGFzcz0ic3QyIiBkPSJNNTM4LjEsMGMtNDIuNywwLTc0LjgsMzItNzQuOCw3NC40czExLjQsNDcuOCwzMC4zLDYxLjF2MTAzaDc1LjZ2LTcuOGgtNTkuNHYtODYuN2M4LjYsMy4yLDE4LjEsNC45LDI4LjQsNC45LDQzLjUsMCw3NC42LTMzLjEsNzQuNi03NC42UzU4Mi40LDAsNTM4LjIsMGgwWk01MzguMSwxNDUuMmMtMTAuOCwwLTIwLjMtMi40LTI4LjQtNi44LTYuMy0zLjUtMTEuOC04LjMtMTYuMi0xNC4yLTkuMS0xMi4yLTE0LTI5LjEtMTQtNDkuOCwwLTQzLjYsMjItNzAuOCw1OC42LTcwLjhzNTguMiwyNy4zLDU4LjIsNzAuOC0yMiw3MC44LTU4LjIsNzAuOGgwWiIvPgogICAgPHBhdGggY2xhc3M9InN0MTUiIGQ9Ik0xNzUuMiwzMDYuOGMuOC0xLjgsMS45LTMuMiwzLjQtNC4xLDEuNS0xLDMuMi0xLjUsNS4yLTEuNXMyLjYuMiwzLjcuN2MxLjEuNSwyLDEuMSwyLjgsMS45czEuMywxLjksMS43LDMuMXYuNWgzLjl2LS4yYy0uNC0xLjktMS4yLTMuNS0yLjMtNC45cy0yLjUtMi41LTQuMi0zLjMtMy42LTEuMi01LjYtMS4yLTUuMi42LTcuMiwxLjktMy42LDMtNC43LDUuM2MtMS4xLDIuMy0xLjcsNS0xLjcsOC4xaDBjMCwzLjEuNiw1LjgsMS43LDguMSwxLjEsMi4zLDIuNyw0LjEsNC43LDUuMywyLDEuMyw0LjQsMS45LDcuMiwxLjlzNC0uNCw1LjYtMS4yYzEuNy0uOCwzLjEtMS45LDQuMi0zLjMsMS4xLTEuNCwxLjktMy4xLDIuMi01di0uMmgtMy43di4yYy0uNSwxLjMtMS4xLDIuNC0xLjksMy4zLS44LjktMS43LDEuNi0yLjgsMi0xLjEuNS0yLjMuNy0zLjcuNy0yLDAtMy43LS41LTUuMS0xLjUtMS41LTEtMi42LTIuNC0zLjQtNC4yLS44LTEuOC0xLjItMy45LTEuMi02LjNoMGMwLTIuNC40LTQuNSwxLjItNi4zdi4yWiIvPgogICAgPHBhdGggY2xhc3M9InN0MTQiIGQ9Ik0yMzEuMSwyOTkuNmMtMi0xLjItNC41LTEuOS03LjMtMS45cy01LjIuNi03LjMsMS45Yy0yLjEsMS4yLTMuNiwzLTQuOCw1LjMtMS4xLDIuMy0xLjcsNS0xLjcsOC4xaDBjMCwzLjIuNiw1LjksMS43LDguMiwxLjEsMi4zLDIuNyw0LjEsNC43LDUuMywyLjEsMS4yLDQuNSwxLjksNy4zLDEuOXM1LjItLjYsNy4zLTEuOWMyLTEuMiwzLjYtMyw0LjctNS4zczEuNy01LDEuNy04LjJoMGMwLTMuMi0uNi01LjktMS43LTguMi0xLjEtMi4zLTIuNy00LjEtNC43LTUuM2gwWk0yMzMuOCwzMTMuMWMwLDIuNC0uNCw0LjUtMS4yLDYuMy0uOCwxLjgtMS45LDMuMi0zLjQsNC4xLTEuNSwxLTMuMiwxLjUtNS4zLDEuNXMtMy44LS41LTUuMy0xLjUtMi42LTIuNC0zLjQtNC4xYy0uOC0xLjgtMS4yLTMuOS0xLjItNi4zaDBjMC0yLjUuNC00LjYsMS4yLTYuNC44LTEuOCwyLTMuMiwzLjQtNC4xLDEuNS0xLDMuMi0xLjUsNS4zLTEuNXMzLjguNSw1LjMsMS41LDIuNiwyLjMsMy40LDQuMWMuOCwxLjgsMS4yLDMuOSwxLjIsNi4zaDBaIi8+CiAgICA8cG9seWdvbiBjbGFzcz0ic3QxMSIgcG9pbnRzPSIyNzMuMyAzMjEuNyAyNzMuMiAzMjEuNyAyNTYuOCAyOTguMyAyNTMuMiAyOTguMyAyNTMuMiAzMjggMjU2LjkgMzI4IDI1Ni45IDMwNC41IDI1NyAzMDQuNSAyNzMuMyAzMjggMjc2LjkgMzI4IDI3Ni45IDI5OC4zIDI3My4zIDI5OC4zIDI3My4zIDMyMS43Ii8+CiAgICA8cGF0aCBjbGFzcz0ic3QxMCIgZD0iTTMxMC43LDMxMy4yYy0xLjMtLjctMi45LTEuMy01LTEuN2wtMy4zLS43Yy0xLjktLjQtMy40LTEtNC4zLTEuOHMtMS40LTEuOC0xLjQtM2gwYzAtMSwuMy0xLjguOC0yLjVzMS4zLTEuMywyLjMtMS43YzEtLjQsMi4xLS42LDMuNS0uNnMyLjQuMiwzLjMuNmMxLC40LDEuNy45LDIuMywxLjYuNi43LDEsMS42LDEuMSwyLjZ2LjNoMy43di0uM2MtLjEtMS42LS42LTMtMS42LTQuMy0uOS0xLjItMi4xLTIuMi0zLjctMi45LTEuNS0uNy0zLjMtMS01LjItMXMtMy44LjQtNS40LDEuMS0yLjgsMS43LTMuNywyLjljLS45LDEuMi0xLjMsMi43LTEuNCw0LjNoMGMwLDIuMi43LDMuOSwyLjEsNS4zLDEuNCwxLjMsMy41LDIuMyw2LjQsM2wzLjMuN2MyLC41LDMuNSwxLjEsNC40LDEuOXMxLjQsMS44LDEuNCwzLjFoMGMwLDEtLjMsMS45LS45LDIuNy0uNi44LTEuNCwxLjMtMi40LDEuNy0xLC40LTIuMy42LTMuNy42cy0yLjctLjItMy44LS42Yy0xLjEtLjQtMi0uOS0yLjYtMS43LS43LS43LTEuMS0xLjYtMS4yLTIuNnYtLjNoLTMuN3YuM2MuMSwxLjcuNywzLjIsMS42LDQuNCwxLDEuMiwyLjIsMi4yLDMuOSwyLjksMS42LjcsMy41LDEsNS43LDFzNC4yLS4zLDUuOS0xYzEuNi0uNywyLjktMS43LDMuOC0zczEuMy0yLjgsMS4zLTQuNmgwYzAtMS41LS4zLTIuOC0uOS0zLjlzLTEuNS0yLTIuOC0yLjdoLjJaIi8+CiAgICA8cGF0aCBjbGFzcz0ic3QxNyIgZD0iTTM0OS43LDMxNy4zYzAsMS41LS4zLDIuOS0uOSw0LS42LDEuMi0xLjUsMi4xLTIuNywyLjctMS4yLjctMi43LDEtNC40LDFzLTMuMi0uMy00LjQtMWMtMS4yLS43LTIuMS0xLjYtMi44LTIuNy0uNi0xLjItMS0yLjUtMS00di0xOWgtMy43djE5LjNjMCwyLjIuNSw0LjEsMS40LDUuN3MyLjMsMi45LDQuMSwzLjhjMS44LjksMy45LDEuNCw2LjMsMS40czQuNi0uNSw2LjMtMS40YzEuOC0uOSwzLjEtMi4yLDQtMy44LjktMS42LDEuNC0zLjUsMS40LTUuN3YtMTkuM2gtMy43djE5aC4xWiIvPgogICAgPHBvbHlnb24gY2xhc3M9InN0MTIiIHBvaW50cz0iMzczLjkgMjk4LjMgMzcwLjIgMjk4LjMgMzcwLjIgMzI4IDM4OC4zIDMyOCAzODguMyAzMjQuNiAzNzMuOSAzMjQuNiAzNzMuOSAyOTguMyIvPgogICAgPHBvbHlnb24gY2xhc3M9InN0MTMiIHBvaW50cz0iMzk3IDMwMS42IDQwNi40IDMwMS42IDQwNi40IDMyOCA0MTAuMSAzMjggNDEwLjEgMzAxLjYgNDE5LjQgMzAxLjYgNDE5LjQgMjk4LjMgMzk3IDI5OC4zIDM5NyAzMDEuNiIvPgogICAgPHBhdGggY2xhc3M9InN0MTYiIGQ9Ik00NDEuNywyOTguM2gtMi43bC0xMS4xLDI5LjdoMy45bDMtOC41aDEybDMsOC41aDMuOWwtMTEtMjkuN2gtMVpNNDM1LjksMzE2LjNsNC44LTEzLjZoMGw0LjgsMTMuNmgtOS43LjFaIi8+CiAgICA8cG9seWdvbiBjbGFzcz0ic3Q5IiBwb2ludHM9IjQ4OC4yIDMyMS43IDQ4OC4xIDMyMS43IDQ3MS43IDI5OC4zIDQ2OC4xIDI5OC4zIDQ2OC4xIDMyOCA0NzEuOCAzMjggNDcxLjggMzA0LjUgNDcxLjkgMzA0LjUgNDg4LjIgMzI4IDQ5MS44IDMyOCA0OTEuOCAyOTguMyA0ODguMiAyOTguMyA0ODguMiAzMjEuNyIvPgogICAgPHBhdGggY2xhc3M9InN0MTgiIGQ9Ik01MTIuNSwzMDYuOGMuOC0xLjgsMS45LTMuMiwzLjQtNC4xLDEuNS0xLDMuMi0xLjUsNS4yLTEuNXMyLjYuMiwzLjcuN2MxLjEuNSwyLDEuMSwyLjgsMS45czEuMywxLjksMS43LDMuMXYuNWgzLjl2LS4yYy0uNC0xLjktMS4yLTMuNS0yLjMtNC45cy0yLjUtMi41LTQuMi0zLjMtMy42LTEuMi01LjYtMS4yLTUuMi42LTcuMiwxLjktMy42LDMtNC43LDUuM2MtMS4xLDIuMy0xLjcsNS0xLjcsOC4xaDBjMCwzLjEuNiw1LjgsMS43LDguMSwxLjEsMi4zLDIuNyw0LjEsNC43LDUuMywyLDEuMyw0LjQsMS45LDcuMiwxLjlzNC0uNCw1LjYtMS4yYzEuNy0uOCwzLjEtMS45LDQuMi0zLjMsMS4xLTEuNCwxLjktMy4xLDIuMi01di0uMmgtMy43di4yYy0uNSwxLjMtMS4xLDIuNC0xLjksMy4zLS44LjktMS43LDEuNi0yLjgsMi0xLjEuNS0yLjMuNy0zLjcuNy0yLDAtMy43LS41LTUuMS0xLjUtMS41LTEtMi42LTIuNC0zLjQtNC4yLS44LTEuOC0xLjItMy45LTEuMi02LjNoMGMwLTIuNC40LTQuNSwxLjItNi4zdi4yWiIvPgogICAgPHBvbHlnb24gY2xhc3M9InN0MTkiIHBvaW50cz0iNTU3LjcgMzExLjYgNTU3LjYgMzExLjYgNTQ5LjUgMjk4LjMgNTQ1LjIgMjk4LjMgNTU1LjggMzE1LjIgNTU1LjggMzI4IDU1OS41IDMyOCA1NTkuNSAzMTUuMiA1NzAgMjk4LjMgNTY1LjggMjk4LjMgNTU3LjcgMzExLjYiLz4KICA8L2c+Cjwvc3ZnPg==" alt="PythonBull" class="h-10 w-auto brightness-0 invert">
+      <span class="text-sm font-medium tracking-wide hidden sm:inline">Business Development Portal</span>
+    </a>
+    <span class="text-[11px] font-semibold uppercase tracking-wider bg-white/15 rounded-full px-3 py-1">Demo · sample data</span>
+  </div>
+</nav>
+
+<div class="container py-8">
+  <div class="grid grid-cols-1 lg:grid-cols-[240px_1fr] gap-6">
+    <aside class="bg-card border border-border rounded-lg p-3 h-fit lg:sticky lg:top-20">
+      <p class="px-3 pt-1 pb-2 text-[11px] uppercase tracking-wider text-muted-foreground font-semibold">Jewellery</p>
+      <a href="#" class="flex items-center gap-2 px-3 py-2 mb-1 rounded-md text-xs text-muted-foreground hover:bg-muted/60 hover:text-foreground"><i data-lucide="arrow-left" class="w-3.5 h-3.5"></i>All Industries</a>
+      <div class="flex flex-col gap-0.5" id="sidenav"></div>
+    </aside>
+
+    <main class="min-w-0">
+      <div class="flex justify-end mb-3">
+        <button id="refresh" class="inline-flex items-center gap-2 h-9 px-3 rounded-md border border-border bg-card text-sm font-medium hover:bg-muted"><i data-lucide="refresh-cw" class="w-4 h-4"></i>Refresh</button>
+      </div>
+      <div id="page" class="space-y-6"></div>
+    </main>
+  </div>
+</div>
+
+<div id="modal" hidden class="fixed inset-0 z-[70] bg-black/80 flex items-center justify-center p-4"></div>
+<div id="toasts" class="fixed z-[80] flex flex-col gap-2" style="right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px))"></div>
+
+<script>
+const ago=d=>new Date(Date.now()-d*864e5).toISOString();
+const fmtDate=iso=>new Date(iso).toLocaleDateString(undefined,{month:"short",day:"numeric",year:"numeric"});
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+// All names invented for the demo.
+const S={
+ brands:[
+  {id:"b1",name:"Al Wasl 22K Atelier",category:"Tier 2",location:"Dubai, UAE",contacts:2,source:"Google Maps",status:"Approved",last:ago(1)},
+  {id:"b2",name:"Saba Fine Diamonds",category:"Tier 1",location:"Abu Dhabi, UAE",contacts:4,source:"LinkedIn",status:"Contacted",last:ago(3)},
+  {id:"b3",name:"Hessa Designs",category:"Designer Brand",location:"Dubai, UAE",contacts:1,source:"Google Search",status:"Approved",last:ago(5)},
+  {id:"b4",name:"Qamar Gold & Diamonds",category:"Tier 2",location:"Sharjah, UAE",contacts:0,source:"Meta Ads",status:"Approved",last:ago(8)},
+  {id:"b5",name:"Lulua Bridal Gold",category:"",location:"Doha, Qatar",contacts:0,source:"Shopify",status:"Approved",last:ago(12)},
+ ],
+ review:[
+  {id:"r1",name:"Zayna Gold",type:"Brand",source:"Google Search",location:"Dubai, UAE",campaign:"IG gold sweep · Nov",conf:"Supporting",found:ago(0),dup:"None",reason:"RV: evidence is supporting only"},
+  {id:"r2",name:"Bright Silver & Gold",type:"Brand",source:"Meta Ads",location:"Ajman, UAE",campaign:"Meta Ads library",conf:"High",found:ago(1),dup:"None",reason:"RV: mixed catalogue (925 silver + 21K gold)"},
+  {id:"r3",name:"Emirates Karat Works",type:"Manufacturer",source:"LinkedIn",location:"Sharjah, UAE",campaign:"LinkedIn manufacturers",conf:"Supporting",found:ago(2),dup:"Low",reason:"RV: manufacturer, confirm own production"},
+  {id:"r4",name:"Gold Rush Traders",type:"Brand",source:"Google Maps",location:"Dubai, UAE",campaign:"Maps · gold market",conf:"High",found:ago(2),dup:"None",reason:"RV: negative keyword “we buy gold”"},
+  {id:"r5",name:"Dubai Institute of Jewellery Arts",type:"Institution",source:"Google Search",location:"Dubai, UAE",campaign:"Schools sweep",conf:"High",found:ago(4),dup:"None",reason:"RV: institution, confirm jewellery programme"},
+  {id:"r6",name:"Mira Kassem Studio",type:"Designer",source:"Manual Entry",location:"Riyadh, Saudi Arabia",campaign:"—",conf:"Discovery only",found:ago(6),dup:"Medium",reason:"RV: no official site or Instagram yet"},
+ ],
+ dropped:[
+  {id:"d1",name:"Lumière Plated Co.",category:"Brand",location:"Sharjah, UAE",source:"Meta Ads",last:ago(1),why:"DQ-PROD: plated / costume only"},
+  {id:"d2",name:"Mumbai Karat House",category:"Manufacturer",location:"Mumbai, India",source:"LinkedIn",last:ago(3),why:"DQ-GEO: outside UAE/GCC"},
+  {id:"d3",name:"Maison Rivoli Paris",category:"Brand",location:"Paris, France",source:"Google Search",last:ago(9),why:"DQ-GLOBAL: global heritage maison"},
+ ],
+ partners:{
+  manufacturers:[
+   {id:"m1",name:"Gulf Chain Manufacturing",location:"Sharjah, UAE",contact:"Imran Qureshi",source:"LinkedIn",status:"Discovered",last:ago(2)},
+   {id:"m2",name:"Al Noor Casting LLC",location:"Dubai, UAE",contact:"Faisal Haddad",source:"Google Maps",status:"Contacted",last:ago(6)},
+   {id:"m3",name:"Desert Rose Refinery Works",location:"Ajman, UAE",contact:"",source:"Google Search",status:"Gone Cold",last:ago(40)}],
+  institutions:[
+   {id:"i1",name:"Gulf Gemmology Academy",location:"Dubai, UAE",contact:"Admissions office",source:"Google Search",status:"Discovered",last:ago(4)}],
+  designers:[
+   {id:"g1",name:"Layla Mansour",location:"Abu Dhabi, UAE",contact:"Layla M. Studio",source:"Manual Entry",status:"Discovered",last:ago(3)},
+   {id:"g2",name:"Omar Rahal",location:"Dubai, UAE",contact:"Rahal Atelier",source:"Google Search",status:"Contacted",last:ago(10)}],
+ },
+ influencers:[
+  {id:"n1",name:"Noor Styles",ig:"@noorstyles.ae",followers:"128K",category:"Bridal",assigned:"Sara",status:"Active"},
+  {id:"n2",name:"The Gold Edit",ig:"@thegoldedit",followers:"54K",category:"Luxury",assigned:"Ahmed",status:"Active"},
+  {id:"n3",name:"Dana Wears",ig:"@danawears",followers:"22K",category:"Lifestyle",assigned:"Sara",status:"Inactive"}],
+};
+
+const SOURCES=["Google Maps","Google Search","LinkedIn","Shopify","Meta Ads","Manual Entry"];
+const TIERS=["Tier 1","Tier 2","Designer Brand"];
+const LEAD_CATS=["Tier 1","Tier 2","Designer Brand","Manufacturer","Institution","Designer"];
+const DATES=["Any time","Last 24h","Last 7 days","Last 30 days"];
+const REJECT_REASONS=["Not relevant","Duplicate","Wrong industry","Low quality","Missing information","Other"];
+const rowStatus={Approved:"bg-emerald-100 text-emerald-800 border-emerald-200",Contacted:"bg-violet-100 text-violet-800 border-violet-200",Rejected:"bg-rose-100 text-rose-800 border-rose-200"};
+const pipeStyle={Discovered:"bg-sky-100 text-sky-800 border-sky-200",Contacted:"bg-violet-100 text-violet-800 border-violet-200","Gone Cold":"bg-muted text-muted-foreground border-border"};
+const risk={None:"bg-muted text-muted-foreground border-border",Low:"bg-emerald-100 text-emerald-800 border-emerald-200",Medium:"bg-amber-100 text-amber-800 border-amber-200",High:"bg-rose-100 text-rose-800 border-rose-200"};
+const evTone={High:"text-emerald-700",Supporting:"text-amber-700","Discovery only":"text-rose-700"};
+const srcIcon={"Google Maps":"map-pin","Google Search":"globe",LinkedIn:"linkedin",Shopify:"shopping-bag","Meta Ads":"megaphone","Manual Entry":"pencil"};
+
+let st={section:"brands",brandTab:"approved",partner:"manufacturers",pipeTab:"Discovered",inflTab:"Active",q:{},f:{}};
+
+const chip=n=>`<span class="ml-1.5 inline-flex items-center justify-center min-w-5 h-5 px-1.5 rounded-full bg-muted text-[10px] font-semibold text-muted-foreground">${n}</span>`;
+const badge=(cls,t)=>`<span class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-[10px] font-semibold ${cls}">${esc(t)}</span>`;
+const srcLink=s=>`<span class="ic inline-flex items-center gap-1.5 text-muted-foreground" title="${esc(s)}"><i data-lucide="${srcIcon[s]||"link"}"></i><span class="text-xs">${esc(s)}</span></span>`;
+const tabs=(list,active,key)=>`<div class="inline-flex h-10 items-center justify-center rounded-md p-1 text-muted-foreground bg-muted/50 flex-wrap">${list.map(([v,l,n])=>`<button data-set="${key}" data-val="${v}" class="inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium transition-all ${v===active?"bg-background text-foreground shadow-sm":""}">${l}${chip(n)}</button>`).join("")}</div>`;
+const sel=(id,val,opts,label)=>`<select data-filter="${id}" class="sel h-9 w-[140px] rounded-md border border-input bg-card px-3 text-xs">${(label?[["Any","Any "+label]]:[]).concat(opts.map(o=>[o,o])).map(([v,t])=>`<option value="${esc(v)}" ${v===val?"selected":""}>${esc(t)}</option>`).join("")}</select>`;
+const search=k=>`<div class="relative w-52"><i data-lucide="search" class="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-muted-foreground"></i><input data-q="${k}" value="${esc(st.q[k]||"")}" placeholder="Search…" class="flex h-9 w-full rounded-md border border-input pl-8 pr-3 text-xs bg-card"></div>`;
+const th=c=>`<th class="h-12 px-4 text-left align-middle font-medium text-muted-foreground text-xs ${c.r?"text-right":""}">${c.t}</th>`;
+const card=(head,rows)=>`<div class="bg-card border border-border rounded-lg shadow-sm overflow-hidden"><div class="overflow-x-auto"><table class="w-full caption-bottom text-sm"><thead><tr class="border-b bg-muted/40">${head.map(th).join("")}</tr></thead><tbody>${rows}</tbody></table></div></div>`;
+const td=(h,c="")=>`<td class="p-4 align-middle ${c}">${h}</td>`;
+const empty=t=>`<div class="bg-card border border-border rounded-lg p-10 text-center text-sm text-muted-foreground">${t}</div>`;
+const actions=(id,kind,full)=>`<div class="flex items-center gap-1 justify-end">
+ <button class="icon-btn" title="View" data-act="view" data-id="${id}" data-kind="${kind}"><i data-lucide="eye"></i></button>
+ ${full?`<button class="icon-btn text-emerald-700" title="Approve" data-act="approve" data-id="${id}"><i data-lucide="check"></i></button>
+ <button class="icon-btn text-rose-700" title="Reject" data-act="reject" data-id="${id}"><i data-lucide="x"></i></button>
+ <button class="icon-btn text-amber-700" title="Mark Duplicate" data-act="dup" data-id="${id}"><i data-lucide="copy"></i></button>`:""}
+ <button class="icon-btn" title="Create Task" data-act="task" data-id="${id}" data-kind="${kind}"><i data-lucide="${full?"list-plus":"clipboard-plus"}"></i></button></div>`;
+
+function filt(rows,k,{type}={}){
+  const q=(st.q[k]||"").toLowerCase(), f=st.f;
+  return rows.filter(r=>(!q||`${r.name} ${r.location} ${r.source}`.toLowerCase().includes(q))
+   &&(!f[k+"src"]||f[k+"src"]==="Any"||r.source===f[k+"src"])
+   &&(!type||!f[k+"type"]||f[k+"type"]==="Any"||r[type]===f[k+"type"]));
+}
+const bar=(k,shown,total,typeLabel,typeOpts,extra="")=>`<div class="flex flex-wrap gap-2 items-center">${search(k)}${sel(k+"src",st.f[k+"src"]||"Any",SOURCES,"Source")}${typeLabel?sel(k+"type",st.f[k+"type"]||"Any",typeOpts,typeLabel):""}${sel(k+"date","Any time",DATES)}<div class="ml-auto flex items-center gap-3"><span class="text-xs text-muted-foreground">${shown} of ${total} records</span>${extra}</div></div>`;
+
+function brandsTable(rows,dropped){
+  return card([{t:"Brand Name"},{t:"Type"},{t:"Category"},{t:"Location"},{t:"Contacts",r:1},{t:"Source"},{t:"Status"},{t:"Last Activity"},{t:"Actions",r:1}],
+  rows.map(b=>`<tr class="border-b last:border-0 hover:bg-muted/50 text-sm">
+   ${td(esc(b.name),"font-medium text-foreground")}
+   ${td(dropped?esc(b.category):"Brand","text-muted-foreground")}
+   ${td(dropped
+     ?`<select data-restore="${b.id}" class="sel h-8 w-[140px] rounded-md border border-input bg-card px-3 text-xs text-rose-700">${LEAD_CATS.map(c=>`<option>${c}</option>`).join("")}<option selected>Dropped</option></select>`
+     :`<select data-tier="${b.id}" class="sel h-8 w-[140px] rounded-md border border-input bg-card px-3 text-xs">${b.category?"":`<option selected disabled>Select</option>`}${TIERS.map(c=>`<option ${c===b.category?"selected":""}>${c}</option>`).join("")}</select>`)}
+   ${td(esc(b.location),"text-muted-foreground")}
+   ${td(dropped?0:b.contacts,"text-right font-medium")}
+   ${td(srcLink(b.source))}
+   ${td(badge(rowStatus[dropped?"Rejected":b.status],dropped?"Rejected":b.status))}
+   ${td(fmtDate(b.last),"text-xs text-muted-foreground whitespace-nowrap")}
+   ${td(actions(b.id,dropped?"dropped":"brand",false))}</tr>`).join(""));
+}
+
+function reviewQueue(){
+  const rows=filt(S.review,"rq",{type:"type"});
+  const total=S.review.length;
+  return `<div class="space-y-5">
+   <div><h2 class="text-xl font-bold text-foreground">Brands · Review Queue</h2><p class="text-sm text-muted-foreground mt-0.5">Vet scraped jewellery brands before approval</p></div>
+   <div class="flex flex-wrap gap-2 items-center">${search("rq")}${sel("rqsrc",st.f.rqsrc||"Any",SOURCES,"Source")}${sel("rqtype",st.f.rqtype||"Any",["Brand","Manufacturer","Institution","Designer"],"Lead Type")}${sel("rqconf","Any confidence",["Any confidence","High","Supporting","Discovery only"])}${sel("rqdate","Any time",DATES)}
+    <div class="ml-auto flex items-center gap-3"><span class="text-xs text-muted-foreground">${rows.length} of ${total} records</span>${total?`<button data-act="approveAll" class="green inline-flex items-center gap-2 h-9 px-3 rounded-md text-xs font-medium ic"><i data-lucide="check" style="width:14px;height:14px"></i>Approve all ${total}</button>`:""}</div></div>
+   ${card([{t:"#"},{t:"Lead Name"},{t:"Type"},{t:"Industry"},{t:"Source"},{t:"Location"},{t:"Campaign"},{t:"Contact"},{t:"Confidence"},{t:"Found"},{t:"Duplicate"},{t:"Actions",r:1}],
+    rows.length?rows.map((l,i)=>`<tr class="border-b last:border-0 hover:bg-muted/50 text-sm">
+     ${td(i+1,"text-xs text-muted-foreground tabular-nums")}${td(esc(l.name),"font-medium text-foreground")}${td(l.type,"text-muted-foreground")}${td("Jewellery","text-muted-foreground")}
+     ${td(`<div class="flex flex-col gap-1"><span class="text-foreground text-xs font-medium">${l.source}</span><span class="text-[11px]">Scraper</span></div>`,"text-muted-foreground")}
+     ${td(`<span class="inline-flex items-center gap-1 whitespace-nowrap"><i data-lucide="map-pin" class="w-3 h-3"></i>${esc(l.location)}</span>`,"text-muted-foreground")}
+     ${td(esc(l.campaign),"text-xs text-muted-foreground")}${td(badge("text-muted-foreground border-border","None"))}
+     ${td(l.conf,"font-medium whitespace-nowrap "+evTone[l.conf])}
+     ${td(`<span class="inline-flex items-center gap-1"><i data-lucide="calendar-days" class="w-3 h-3"></i>${new Date(l.found).toLocaleDateString()}</span>`,"text-muted-foreground text-xs")}
+     ${td(badge(risk[l.dup],l.dup))}${td(actions(l.id,"review",true))}</tr>`).join("")
+    :`<tr><td colspan="12" class="text-center text-sm text-muted-foreground py-10">No records match the current filters.</td></tr>`)}
+   <p class="text-xs text-muted-foreground">Page 1 of 1 · ${rows.length} lead${rows.length===1?"":"s"}</p></div>`;
+}
+
+function brandsSection(){
+  const ap=filt(S.brands,"ap",{type:"category"}), dr=filt(S.dropped,"dr",{type:"category"});
+  let body;
+  if(st.brandTab==="approved")body=`<div class="space-y-3">${bar("ap",ap.length,S.brands.length,"Category",TIERS)}${ap.length?brandsTable(ap):empty("No approved brands.")}</div>`;
+  else if(st.brandTab==="review")body=reviewQueue();
+  else body=`<div class="space-y-3">${bar("dr",dr.length,S.dropped.length,"Lead Type",["Brand","Manufacturer","Institution","Designer"])}${dr.length?brandsTable(dr,true):empty("No dropped leads.")}</div>`;
+  return `<div class="space-y-4">${tabs([["approved","Approved Brands",S.brands.length],["review","Review Queue",S.review.length],["dropped","Dropped",S.dropped.length]],st.brandTab,"brandTab")}<div class="fade">${body}</div></div>`;
+}
+
+function partnersSection(){
+  const P=S.partners, kinds=[["manufacturers","Manufacturers",P.manufacturers.length],["institutions","Institutions",P.institutions.length],["designers","Designers",P.designers.length],["influencers","Influencers",S.influencers.length]];
+  const sub=`<div class="border-b border-border"><div class="flex flex-wrap gap-1 pb-1">${kinds.map(([v,l,n])=>`<button data-set="partner" data-val="${v}" class="inline-flex items-center rounded-md px-3 py-1.5 text-sm font-medium ${v===st.partner?"bg-muted text-foreground":"text-muted-foreground"}">${l}${chip(n)}</button>`).join("")}</div></div>`;
+  let body;
+  if(st.partner==="influencers"){
+    const q=(st.q.inf||"").toLowerCase(), rows=S.influencers.filter(i=>!q||i.name.toLowerCase().includes(q)||i.ig.includes(q));
+    const by=s=>rows.filter(i=>i.status===s), cur=by(st.inflTab);
+    body=`<div class="space-y-4">${tabs([["Active","Active",by("Active").length],["Inactive","Inactive",by("Inactive").length]],st.inflTab,"inflTab")}
+     <div class="relative w-64"><i data-lucide="search" class="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-muted-foreground"></i><input data-q="inf" value="${esc(st.q.inf||"")}" placeholder="Search…" class="flex h-9 w-full rounded-md border border-input pl-8 pr-3 text-sm bg-card"></div>
+     ${cur.length?card([{t:"Influencer Name"},{t:"Instagram"},{t:"Followers",r:1},{t:"Category"},{t:"Assigned To"},{t:"Status"},{t:"Actions",r:1}],cur.map(i=>`<tr class="border-b last:border-0 hover:bg-muted/50 text-sm">${td(esc(i.name),"font-medium")}${td(i.ig,"text-muted-foreground")}${td(i.followers,"text-right font-medium")}${td(i.category,"text-muted-foreground")}${td(i.assigned,"text-muted-foreground")}${td(badge(i.status==="Active"?rowStatus.Approved:pipeStyle["Gone Cold"],i.status))}${td(actions(i.id,"influencer",false))}</tr>`).join("")):empty(`No ${st.inflTab.toLowerCase()} influencers.`)}</div>`;
+  } else {
+    const all=P[st.partner], label={manufacturers:"Manufacturer",institutions:"Institution",designers:"Designer"}[st.partner];
+    const rows=filt(all,"pp"), by=s=>rows.filter(r=>r.status===s), cur=by(st.pipeTab);
+    body=`<div class="space-y-4">${tabs([["Discovered","Discovered",by("Discovered").length],["Contacted","Contacted",by("Contacted").length],["Gone Cold","Gone Cold",by("Gone Cold").length]],st.pipeTab,"pipeTab")}
+     <div class="space-y-3">${bar("pp",cur.length,all.filter(r=>r.status===st.pipeTab).length)}
+     ${card([{t:label+" Name"},{t:"Type"},{t:"Location"},{t:label==="Designer"?"Brand / Studio":"Contact Person"},{t:"Source"},{t:"Pipeline Status"},{t:"Last Activity"},{t:"Actions",r:1}],cur.map(r=>`<tr class="border-b last:border-0 hover:bg-muted/50 text-sm">${td(esc(r.name),"font-medium")}${td(`<select data-move="${r.id}" class="sel h-8 w-[140px] rounded-md border border-input bg-card px-3 text-xs">${["Manufacturer","Institution","Designer"].map(k=>`<option ${k===label?"selected":""}>${k}</option>`).join("")}<option class="text-rose-700">Dropped</option></select>`)}${td(esc(r.location),"text-muted-foreground")}${td(esc(r.contact),"text-muted-foreground")}${td(srcLink(r.source))}${td(badge(pipeStyle[r.status],r.status))}${td(fmtDate(r.last),"text-xs text-muted-foreground whitespace-nowrap")}${td(actions(r.id,"partner",false))}</tr>`).join(""))}</div></div>`;
+  }
+  return `<div class="space-y-5">${sub}<div class="fade">${body}</div></div>`;
+}
+
+function renderLeads(){
+  const focus=document.activeElement?.dataset?.q, pos=document.activeElement?.selectionStart;
+  document.getElementById("page").innerHTML=`
+   <div>
+    <a href="#" class="text-sm text-muted-foreground hover:text-foreground inline-flex items-center gap-1.5"><i data-lucide="arrow-left" class="w-4 h-4"></i>Back to Overview</a>
+    <div class="flex items-start justify-between gap-3 flex-wrap mt-3">
+     <div><h1 class="text-2xl font-bold text-foreground">Jewellery</h1><p class="text-sm text-muted-foreground mt-1">Manage jewellery brands, industry partners, and related business development activity.</p></div>
+     <button data-act="add" class="inline-flex items-center gap-2 h-10 px-4 rounded-md bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90"><i data-lucide="plus" class="w-4 h-4"></i>Add Lead</button>
+    </div>
+   </div>
+   <div class="flex justify-center"><div class="inline-flex rounded-xl bg-muted/50 p-1">${[["brands","Brands"],["partners","Partners"]].map(([v,l])=>`<button data-set="section" data-val="${v}" class="rounded-lg px-6 py-2 text-sm font-medium transition-colors ${st.section===v?"bg-card text-foreground border-2 border-primary/60 shadow-sm":"text-muted-foreground hover:text-foreground border-2 border-transparent"}">${l}</button>`).join("")}</div></div>
+   ${st.section==="brands"?brandsSection():partnersSection()}`;
+  lucide.createIcons();
+  if(focus){const el=document.querySelector(`[data-q="${focus}"]`);if(el){el.focus();el.setSelectionRange(pos,pos);}}
+}
+
+
+function toast(title,desc){
+  const t=document.createElement("div");
+  t.className="fade bg-card border border-border shadow-lg rounded-lg px-4 py-3 w-[320px] max-w-[calc(100vw-32px)] text-sm";
+  t.innerHTML=`<div class="flex gap-2 items-start ic"><i data-lucide="circle-check" class="text-emerald-600 shrink-0"></i><div><p class="font-medium">${esc(title)}</p>${desc?`<p class="text-muted-foreground text-xs mt-0.5">${esc(desc)}</p>`:""}</div></div>`;
+  document.getElementById("toasts").appendChild(t);lucide.createIcons();setTimeout(()=>t.remove(),3200);
+}
+
+const M=document.getElementById("modal");
+function dialog(inner,wide){M.innerHTML=`<div class="fade relative bg-background border border-border shadow-lg rounded-lg p-6 w-full ${wide?"max-w-2xl":"max-w-md"} max-h-[90vh] overflow-auto grid gap-4">${inner}<button class="icon-btn absolute right-3 top-3" data-close title="Close"><i data-lucide="x"></i></button></div>`;M.hidden=false;lucide.createIcons();}
+const close=()=>{M.hidden=true;M.innerHTML="";};
+const footer=(btns)=>`<div class="flex flex-col-reverse sm:flex-row sm:justify-end gap-2">${btns}</div>`;
+const outline=(t,a="data-close")=>`<button ${a} class="h-10 px-4 rounded-md border border-input bg-background text-sm font-medium hover:bg-muted">${t}</button>`;
+const field=(l,inp)=>`<div class="space-y-1.5"><label class="text-xs font-medium">${l}</label>${inp}</div>`;
+const inputCls="flex h-10 w-full rounded-md border border-input bg-background px-3 text-sm";
+
+function findAny(id){return S.review.find(x=>x.id===id)||S.brands.find(x=>x.id===id)||S.dropped.find(x=>x.id===id)||Object.values(S.partners).flat().find(x=>x.id===id)||S.influencers.find(x=>x.id===id);}
+
+function profile(r,kind){
+  const row=(k,v)=>`<div class="flex justify-between gap-4 py-1.5 border-b border-border last:border-0"><span class="text-muted-foreground">${k}</span><span class="text-right">${v}</span></div>`;
+  const tier=r.category&&TIERS.includes(r.category)?r.category:(kind==="review"?"Pending":"");
+  dialog(`<div><p class="text-[11px] uppercase tracking-wider text-muted-foreground font-semibold">${kind==="review"?"Review Queue":"Jewellery"} · ${esc(r.type||r.category||"Brand")}</p><h3 class="text-lg font-semibold mt-1">${esc(r.name)}</h3><p class="text-sm text-muted-foreground inline-flex items-center gap-1"><i data-lucide="map-pin" class="w-3 h-3"></i>${esc(r.location||"")}</p></div>
+   ${kind==="brand"||kind==="review"?`<div class="bg-card border border-border rounded-lg px-5 py-4 space-y-3"><div class="flex items-start justify-between gap-3"><h4 class="text-sm font-semibold">Commercial tier</h4>${badge(tier&&tier!=="Pending"?(tier==="Designer Brand"?"bg-violet-100 text-violet-800 border-violet-200":"bg-emerald-100 text-emerald-800 border-emerald-200"):"bg-muted text-muted-foreground border-border",(tier||"Pending")+" · "+(tier&&tier!=="Pending"?"confirmed":"not assessed"))}</div><p class="text-sm leading-relaxed">${tier==="Tier 1"?"58 stores across the GCC from the official store locator; 18K diamond lines on the official website.":tier==="Designer Brand"?"Independent designer selling one-of-one 18K gold pieces under her own name.":tier==="Tier 2"?"Single-city retailer under 50 stores with 21K/22K solid gold on its official Instagram.":"Run the research scan to have Claude propose Tier 1, Tier 2 or Designer Brand from the brand's official evidence."}</p><p class="text-xs text-muted-foreground">${tier&&tier!=="Pending"?"Proposed by Claude · High confidence · Confirmed by reviewer":""}</p></div>`:""}
+   ${kind==="dropped"?`<div class="rounded-md border border-rose-200 bg-rose-50 text-rose-800 px-4 py-3 text-sm">${esc(r.why)}</div>`:""}
+   ${kind==="review"?`<div class="rounded-md border border-sky-200 bg-sky-50 text-sky-800 px-4 py-3 text-sm">Found by ${esc(r.source)}. ${esc(r.reason)}</div>`:""}
+   <div class="text-sm">${row("Source",esc(r.source||"Manual"))}${r.conf?row("Evidence",`<span class="font-medium ${evTone[r.conf]}">${r.conf}</span>`):""}${r.contacts!=null?row("Contacts",r.contacts):""}${r.last||r.found?row("Last activity",fmtDate(r.last||r.found)):""}${r.ig?row("Instagram",r.ig):""}</div>
+   ${kind==="brand"||kind==="review"?`<div class="flex flex-wrap gap-2">${["Enrich","Enrich More","Find Decision Makers"].map(b=>`<button data-act="fake" data-msg="${b}" data-name="${esc(r.name)}" class="h-9 px-3 rounded-md border border-input bg-background text-xs font-medium hover:bg-muted">${b}</button>`).join("")}</div>`:""}`,true);
+}
+
+document.addEventListener("click",e=>{
+  if(e.target===M||e.target.closest("[data-close]")){close();return;}
+  const s=e.target.closest("[data-set]");
+  if(s){st[s.dataset.set]=s.dataset.val;render();return;}
+  if(e.target.closest("[data-side]")){e.preventDefault();st.screen=e.target.closest("[data-side]").dataset.side;st.sub=null;render();window.scrollTo({top:0});return;}
+  if(e.target.closest('a[href="#"]')){e.preventDefault();return;}
+  const a=e.target.closest("[data-act]"); if(!a)return;
+  const id=a.dataset.id, r=id&&findAny(id);
+  switch(a.dataset.act){
+   case"view":profile(r,a.dataset.kind);break;
+   case"approve":dialog(`<div><h3 class="text-lg font-semibold">Approve record?</h3><p class="text-sm text-muted-foreground mt-1.5">Approve <span class="font-medium text-foreground">${esc(r.name)}</span> and move it to Approved Leads?</p></div>${footer(outline("Cancel")+`<button data-act="doApprove" data-id="${id}" class="green inline-flex items-center gap-2 h-10 px-4 rounded-md text-sm font-medium ic"><i data-lucide="check"></i>Approve</button>`)}`);break;
+   case"doApprove":approve([id]);close();break;
+   case"reject":dialog(`<div><h3 class="text-lg font-semibold">Reject record</h3><p class="text-sm text-muted-foreground mt-1.5">Provide a reason for rejecting <span class="font-medium text-foreground">${esc(r.name)}</span>.</p></div>
+     ${field("Reason",`<select id="rej-reason" class="sel ${inputCls} bg-card">${REJECT_REASONS.map(x=>`<option>${x}</option>`).join("")}</select>`)}${field("Notes (optional)",`<textarea id="rej-note" rows="3" placeholder="Add context..." class="w-full rounded-md border border-input bg-background px-3 py-2 text-sm"></textarea>`)}
+     ${footer(outline("Cancel")+`<button data-act="doReject" data-id="${id}" class="inline-flex items-center gap-2 h-10 px-4 rounded-md bg-destructive text-white text-sm font-medium ic"><i data-lucide="x"></i>Reject</button>`)}`);break;
+   case"doReject":{const reason=document.getElementById("rej-reason").value;S.review=S.review.filter(x=>x.id!==id);S.dropped.unshift({id,name:r.name,category:r.type,location:r.location,source:r.source,last:new Date().toISOString(),why:"Rejected in review: "+reason});close();render();toast(`Rejected ${r.name}`,"Kept on record, not deleted.");break;}
+   case"dup":dialog(`<div><h3 class="text-lg font-semibold flex items-center gap-2 ic"><i data-lucide="triangle-alert" class="text-amber-600"></i>Possible duplicate</h3><p class="text-sm text-muted-foreground mt-1.5">Review the possible match for <span class="font-medium text-foreground">${esc(r.name)}</span> and choose an action.</p></div>
+     <div class="bg-muted/40 border border-border rounded-md p-3 text-sm text-muted-foreground">No automatic match found — choose how to handle this manually.</div>
+     ${field("Suggested action",`<select class="sel ${inputCls} bg-card"><option>Keep both</option><option>Merge into existing</option><option>Discard incoming</option></select>`)}
+     ${footer(outline("Cancel")+`<button data-act="fake" data-msg="Duplicate handled" data-name="${esc(r.name)}" class="green h-10 px-4 rounded-md text-sm font-medium">Apply</button>`)}`);break;
+   case"task":dialog(`<div><h3 class="text-lg font-semibold">Create task</h3><p class="text-sm text-muted-foreground mt-1.5">Linked to <span class="font-medium text-foreground">${esc(r.name)}</span>.</p></div>
+     ${field("Task title",`<input id="task-title" class="${inputCls}" value="Follow up with ${esc(r.name)}">`)}
+     <div class="grid grid-cols-2 gap-3">${field("Assigned to",`<select class="sel ${inputCls} bg-card"><option>Sara</option><option>Ahmed</option><option>Aashiya</option></select>`)}${field("Due date",`<input type="date" class="${inputCls}">`)}</div>
+     ${field("Notes",`<textarea rows="3" placeholder="Add details..." class="w-full rounded-md border border-input bg-background px-3 py-2 text-sm"></textarea>`)}
+     ${footer(outline("Cancel")+`<button data-act="fake" data-msg="Task created" class="green h-10 px-4 rounded-md text-sm font-medium">Create Task</button>`)}`);break;
+   case"approveAll":dialog(`<div><h3 class="text-lg font-semibold">Approve all ${S.review.length} leads?</h3><p class="text-sm text-muted-foreground mt-1.5">Every lead in this queue is approved at once and queued for enrichment. They stay on record and can be rejected afterwards, but this is one decision covering all ${S.review.length} of them.</p></div>${footer(outline("Cancel")+`<button data-act="doApproveAll" class="green inline-flex items-center gap-2 h-10 px-4 rounded-md text-sm font-medium ic"><i data-lucide="check"></i>Approve all ${S.review.length}</button>`)}`);break;
+   case"doApproveAll":approve(S.review.map(x=>x.id));close();break;
+   case"add":dialog(`<div><h3 class="text-lg font-semibold">Add jewellery lead</h3><p class="text-sm text-muted-foreground mt-1.5">A lead typed in by hand goes to the Review Queue.</p></div>
+     ${field("Name",`<input id="add-name" class="${inputCls}" placeholder="Brand name" value="Noor Al Khaleej Gold">`)}
+     <div class="grid grid-cols-2 gap-3">${field("Type",`<select id="add-type" class="sel ${inputCls} bg-card"><option>Brand</option><option>Manufacturer</option><option>Institution</option><option>Designer</option></select>`)}${field("City, Country",`<input id="add-loc" class="${inputCls}" value="Dubai, UAE">`)}</div>
+     ${field("Website or Instagram",`<input id="add-link" class="${inputCls}" placeholder="https://">`)}
+     ${footer(outline("Cancel")+`<button data-act="doAdd" class="h-10 px-4 rounded-md bg-primary text-primary-foreground text-sm font-medium">Add Lead</button>`)}`);break;
+   case"doAdd":{const name=document.getElementById("add-name").value.trim()||"Untitled lead";const link=document.getElementById("add-link").value.trim();S.review.unshift({id:"r"+Date.now(),name,type:document.getElementById("add-type").value,source:"Manual Entry",location:document.getElementById("add-loc").value,campaign:"—",conf:link?"High":"Discovery only",found:new Date().toISOString(),dup:"None",reason:"Added by hand"});st.section="brands";st.brandTab="review";close();render();toast(`${name} added`,"Waiting in the Review Queue.");break;}
+   case"fake":close();toast(a.dataset.msg,a.dataset.name?`${a.dataset.name} · demo only, nothing was sent`:"Demo only");break;
+  }
+});
+function approve(ids){
+  ids.forEach(id=>{const r=S.review.find(x=>x.id===id);if(!r)return;S.review=S.review.filter(x=>x.id!==id);
+    if(r.type==="Brand")S.brands.unshift({id,name:r.name,category:"",location:r.location,contacts:0,source:r.source,status:"Approved",last:new Date().toISOString()});
+    else{const k={Manufacturer:"manufacturers",Institution:"institutions",Designer:"designers"}[r.type];S.partners[k].unshift({id,name:r.name,location:r.location,contact:"",source:r.source,status:"Discovered",last:new Date().toISOString()});}});
+  render();toast(`${ids.length} lead${ids.length===1?"":"s"} approved`,"Run Find Decision Makers from the record's drawer when ready.");
+}
+document.addEventListener("input",e=>{const k=e.target.dataset.q;if(k){st.q[k]=e.target.value;render();}});
+document.addEventListener("change",e=>{
+  const t=e.target;
+  if(t.dataset.filter){st.f[t.dataset.filter]=t.value;render();}
+  if(t.dataset.tier){const b=S.brands.find(x=>x.id===t.dataset.tier);b.category=t.value;render();toast(`${b.name} is now ${t.value}`);}
+  if(t.dataset.restore){const b=S.dropped.find(x=>x.id===t.dataset.restore);S.dropped=S.dropped.filter(x=>x!==b);S.review.unshift({id:b.id,name:b.name,type:TIERS.includes(t.value)?"Brand":t.value,source:b.source,location:b.location,campaign:"—",conf:"Supporting",found:new Date().toISOString(),dup:"None",reason:"Brought back from Dropped"});render();toast(`${b.name} is back in review as ${t.value}`);}
+  if(t.dataset.move){const P=S.partners;let from=Object.keys(P).find(k=>P[k].some(x=>x.id===t.dataset.move));const r=P[from].find(x=>x.id===t.dataset.move);P[from]=P[from].filter(x=>x!==r);
+    if(t.value==="Dropped"){S.dropped.unshift({id:r.id,name:r.name,category:t.value==="Dropped"?{manufacturers:"Manufacturer",institutions:"Institution",designers:"Designer"}[from]:t.value,location:r.location,source:r.source,last:new Date().toISOString(),why:"Dropped by reviewer"});toast(`${r.name} dropped`,"Moved to Dropped Leads.");}
+    else{P[t.value.toLowerCase()+"s"].unshift(r);toast(`${r.name} moved to ${t.value}s`);}render();}
+});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!M.hidden)close();});
+document.getElementById("refresh").onclick=()=>{const p=document.getElementById("page");p.style.opacity=.4;setTimeout(()=>{p.style.opacity=1;toast("Refreshed","Sample data, nothing fetched.");},600);};
+// ===================== Other screens =====================
+st.screen="Leads";
+const NAV=[["users","Leads"],["instagram","IG Monitor"],["scan-search","Brand Scan"],["calendar-days","Event Scan"],["activity","Automation Monitor"],["history","Activity History"]];
+const rel=iso=>{const m=Math.round((Date.now()-new Date(iso))/6e4);return m<1?"just now":m<60?m+"m ago":m<1440?Math.round(m/60)+"h ago":Math.round(m/1440)+"d ago";};
+const fmtDT=iso=>new Date(iso).toLocaleString(undefined,{month:"short",day:"numeric",hour:"2-digit",minute:"2-digit"});
+const greenBtn=(act,inner,extra="")=>`<button data-act2="${act}" ${extra} class="green inline-flex items-center justify-center gap-2 h-9 px-3 rounded-md text-sm font-medium ic disabled:opacity-50">${inner}</button>`;
+const outBtn=(act,inner,extra="",cls="h-8 text-xs")=>`<button data-act2="${act}" ${extra} class="inline-flex items-center gap-1.5 ${cls} px-3 rounded-md border border-input bg-background font-medium hover:bg-muted ic">${inner}</button>`;
+const ghostBtn=(act,inner,extra="",cls="h-8 text-xs")=>`<button data-act2="${act}" ${extra} class="inline-flex items-center gap-1.5 ${cls} px-2 rounded-md font-medium hover:bg-muted ic">${inner}</button>`;
+const I=(n,c="w-3.5 h-3.5")=>`<i data-lucide="${n}" class="${c}"></i>`;
+const head=(t,sub,right="")=>`<div class="flex items-start justify-between gap-4 flex-wrap"><div><h1 class="text-2xl font-bold text-foreground">${t}</h1><p class="text-sm text-muted-foreground mt-1">${sub}</p></div>${right}</div>`;
+const tbl=(cols,rows)=>`<div class="overflow-x-auto"><table class="w-full text-sm"><thead><tr class="border-b">${cols.map(c=>`<th class="h-12 px-4 text-left align-middle font-medium text-muted-foreground ${c.r?"text-right":c.c?"text-center":""}">${c.t}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>`;
+
+// ---- data
+const D={
+ targets:[{id:"t1",handle:"@alwasl22k",status:"Active",last:ago(.02)},{id:"t2",handle:"@sabafinediamonds",status:"Active",last:ago(.1)},{id:"t3",handle:"@noorstyles.ae",status:"Active",last:ago(.3)},{id:"t4",handle:"@qamargold",status:"Paused",last:ago(2)},{id:"t5",handle:"@gulfchainmfg",status:"Error",last:ago(1)}],
+ posts:[
+  {id:"p1",acc:"@alwasl22k",cat:"Competitors",at:ago(.05),cap:"New 22K bridal collection now in store at the old gold market. Hallmarked, lifetime exchange."},
+  {id:"p2",acc:"@noorstyles.ae",cat:"Influencers",at:ago(.2),cap:"Styled three ways: my favourite 18K layered chains for Diwali and wedding season ✨"},
+  {id:"p3",acc:"@sabafinediamonds",cat:"Competitors",at:ago(.6),cap:"Opening our 59th store at Marina Walk Mall this weekend. GIA solitaires from AED 4,900."},
+  {id:"p4",acc:"@gulfchainmfg",cat:"Partners",at:ago(1.2),cap:"Our Sharjah casting line is now taking orders for private-label 21K chains, MOQ 2kg."},
+  {id:"p5",acc:"@noorstyles.ae",cat:"Influencers",at:ago(2),cap:"Unboxing a one-of-one piece from @hessadesigns. Handmade in Dubai."}],
+ pubs:[{id:"u1",name:"Gulf Jewellery Review",url:"https://gulfjewelleryreview.example/news",on:true},{id:"u2",name:"Emirates Luxury Weekly",url:"https://emiratesluxury.example/jewellery",on:true},{id:"u3",name:"Arabian Gold Trade Journal",url:"https://goldtrade.example/members",on:false}],
+ scans:[
+  {id:"s1",cid:"JW-BS-014",name:"Gulf Gold & Gem Week 2026 — exhibitor list.pdf",type:"PDF",status:"Completed",found:42,review:11,known:24,dropped:7,date:ago(1),
+   rows:[["Al Wasl 22K Atelier","Already known","Matches an approved brand by website"],["Zayna Gold","In review","Instagram only: evidence is supporting"],["Lumière Plated Co.","Dropped","DQ-PROD: plated / costume only"],["Mumbai Karat House","Dropped","DQ-GEO: outside UAE/GCC"],["Bright Silver & Gold","In review","Mixed catalogue: 925 silver and 21K gold"],["Pearl Bay Gold Week","Ignored","Sponsor, not a lead"]]},
+  {id:"s2",cid:"JW-BS-013",name:"emiratesluxury.example/jewellery/top-30-bridal",type:"URL",status:"Completed",found:30,review:6,known:21,dropped:3,date:ago(4),
+   rows:[["Lulua Bridal Gold","In review","Qatar based, 22K bridal sets"],["Maison Rivoli Paris","Dropped","DQ-GLOBAL: global heritage maison"],["Hessa Designs","Already known","Matches an approved brand"]]},
+  {id:"s3",cid:"JW-BS-012",name:"goldtrade.example/members",type:"URL",status:"Failed",found:0,review:0,known:0,dropped:0,date:ago(6),note:"The page needs a login, so nothing could be read.",rows:[]}],
+ pages:[
+  {id:"e1",name:"Harbourline Expo Hall — events",url:"https://harbourline.example/events",lastRead:ago(2),events:[
+   {id:"v1",name:"Gulf Gold & Gem Week 2026",date:"2026-12-03",type:"Jewellery exhibition",status:"approved"},
+   {id:"v2",name:"Gulf Timepieces & Jewels Fair",date:"2027-02-10",type:"Jewellery & watches",status:"pending_review"},
+   {id:"v3",name:"Coastal Travel Showcase",date:"2027-04-28",type:"Travel",status:"rejected"},
+   {id:"v4",name:"Bridal Gold Pop-up Weekend",date:"2026-11-21",type:"Jewellery pop-up",status:"pending_review"}]},
+  {id:"e2",name:"Crescent Exhibition Park — calendar",url:"https://crescent-expo.example/calendar",lastRead:ago(5),events:[
+   {id:"v5",name:"Crescent Jewellery Fair",date:"2026-12-15",type:"Jewellery exhibition",status:"pending_review"},
+   {id:"v6",name:"Lantern Book Weekend",date:"2026-11-12",type:"Books",status:"rejected"}]}],
+ runs:[
+  {id:"a1",name:"Gold market retailers — Dubai",cid:"JW-0007",src:"Google Maps",last:ago(.04),searched:214,neu:18,dup:61,cost:"$1.84",status:"Running",next:"—"},
+  {id:"a2",name:"UAE fine jewellery founders",cid:"JW-0006",src:"LinkedIn",last:ago(1),searched:160,neu:22,dup:40,cost:"$2.40",status:"Completed",next:ago(-6)},
+  {id:"a3",name:"Gold jewellery advertisers, GCC",cid:"JW-0005",src:"Meta Ads",last:ago(2),searched:88,neu:9,dup:31,cost:"$0.96",status:"Completed",next:ago(-5)},
+  {id:"a4",name:"Shopify jewellery stores, UAE",cid:"JW-0004",src:"Shopify",last:ago(3),searched:0,neu:0,dup:0,cost:"$0.10",status:"Failed",next:"—",err:"The search provider rate-limited the run. Retry in an hour."},
+  {id:"a5",name:"Bridal gold, Qatar & Kuwait",cid:"JW-0003",src:"Google Search",last:ago(9),searched:120,neu:14,dup:27,cost:"$1.20",status:"Scheduled",next:ago(-1)},
+  {id:"a6",name:"Gulf Gold & Gem Week exhibitors",cid:"JW-BS-014",src:"Brand Scan",last:ago(1),searched:42,neu:11,dup:24,cost:"$0.55",status:"Completed",next:"—"}],
+ log:[
+  {t:"Automation",name:"Gold market retailers — Dubai",user:"Automation",at:ago(.04),d:"Campaign JW-0007 started on Google Maps."},
+  {t:"Approval",name:"Al Wasl 22K Atelier",user:"Auto Approval (classifier)",at:ago(1),d:"Auto-approved: 22K solid gold, UAE, exhibitor list evidence. Tier 2 proposed."},
+  {t:"Rejection",name:"Lumière Plated Co.",user:"Auto Approval (classifier)",at:ago(1),d:"Dropped with DQ-PROD: plated and costume jewellery only."},
+  {t:"Review",name:"Zayna Gold",user:"Auto Approval (classifier)",at:ago(.5),d:"Sent to the Review Queue: Instagram only, evidence is supporting."},
+  {t:"Duplicate",name:"Hessa Designs",user:"Automation",at:ago(4),d:"Matched an approved brand by website. Not added again."},
+  {t:"Source",name:"Gulf Gold & Gem Week 2026",user:"Sara",at:ago(2),d:"Event marked relevant. Exhibitors read: 42 found, 11 to review."},
+  {t:"Contact",name:"Saba Fine Diamonds",user:"Ahmed",at:ago(3),d:"Find Decision Makers added 2 people: Head of Retail, Marketing Director."},
+  {t:"Task",name:"Saba Fine Diamonds",user:"Ahmed",at:ago(3),d:"Task created: Follow up with Saba Fine Diamonds."},
+  {t:"Manual Edit",name:"Hessa Designs",user:"Sara",at:ago(5),d:"Commercial tier confirmed as Designer Brand."}],
+ admin:true,halted:false,amTab:"automations",evView:"events",openScan:null,openPage:null,act:{q:"",type:"All",user:"All"}
+};
+const actStyle={Review:"bg-sky-100 text-sky-800 border-sky-200",Approval:"bg-emerald-100 text-emerald-800 border-emerald-200",Rejection:"bg-rose-100 text-rose-800 border-rose-200",Duplicate:"bg-amber-100 text-amber-800 border-amber-200",Contact:"bg-violet-100 text-violet-800 border-violet-200",Source:"bg-indigo-100 text-indigo-800 border-indigo-200",Task:"bg-teal-100 text-teal-800 border-teal-200",Automation:"bg-blue-100 text-blue-800 border-blue-200","Manual Edit":"bg-stone-100 text-stone-800 border-stone-200"};
+const tgtStyle={Active:"bg-emerald-100 text-emerald-800 border-emerald-200",Paused:"bg-amber-100 text-amber-800 border-amber-200",Error:"bg-rose-100 text-rose-800 border-rose-200"};
+const catStyle={Competitors:"bg-sky-100 text-sky-800 border-sky-200",Influencers:"bg-violet-100 text-violet-800 border-violet-200",Partners:"bg-emerald-100 text-emerald-800 border-emerald-200"};
+const runStyle={Running:"bg-sky-100 text-sky-800 border-sky-200",Completed:"bg-emerald-100 text-emerald-800 border-emerald-200",Failed:"bg-rose-100 text-rose-800 border-rose-200",Stopped:"bg-slate-100 text-slate-800 border-slate-200",Scheduled:"bg-muted text-muted-foreground border-border"};
+const smallBadge=(cls,t)=>`<span class="inline-flex items-center rounded-full border px-1.5 h-4 text-[10px] font-semibold ${cls}">${esc(t)}</span>`;
+const switchEl=(on,act,id)=>`<button role="switch" aria-checked="${on}" data-act2="${act}" data-id="${id}" class="relative inline-flex h-5 w-9 shrink-0 rounded-full transition-colors ${on?"bg-primary":"bg-input"}"><span class="pointer-events-none block h-4 w-4 rounded-full bg-background shadow mt-0.5 transition-transform ${on?"translate-x-4":"translate-x-0.5"}"></span></button>`;
+
+// Every toast in the demo also lands in Activity History, so the two screens tell one story.
+const _toast=toast;
+toast=function(title,desc){
+  _toast(title,desc);
+  const t=/approved/i.test(title)?"Approval":/reject|dropped/i.test(title)?"Rejection":/duplicate/i.test(title)?"Duplicate":/task/i.test(title)?"Task":/back in review|added/i.test(title)?"Review":/scan|campaign|stopp|resum|run/i.test(title)?"Automation":/relevant|exhibitor|publication|account/i.test(title)?"Source":"Manual Edit";
+  D.log.unshift({t,name:title.replace(/^(Approved|Rejected) /,""),user:"You",at:new Date().toISOString(),d:desc||title});
+};
+
+// ---- IG Monitor
+function igMonitor(){
+  const f=D.igAcc||"all",c=D.igCat||"all";
+  const posts=D.posts.filter(p=>(f==="all"||p.acc===f)&&(c==="all"||p.cat===c));
+  return `<div class="space-y-5">${head("IG Monitor","Jewellery · Instagram intelligence feed")}
+  <div class="grid grid-cols-1 lg:grid-cols-[320px_1fr] gap-5">
+   <div class="space-y-4">
+    <section class="bg-card border border-border rounded-lg p-4 shadow-sm"><h2 class="text-sm font-semibold mb-3">Add Account</h2>
+     <input id="ig-new" placeholder="instagram.com/handle" class="flex h-9 w-full rounded-md border border-input bg-background px-3 text-sm">
+     <button data-act2="igAdd" class="green mt-3 w-full inline-flex items-center justify-center gap-2 h-9 rounded-md text-sm font-medium ic">${I("plus","w-4 h-4")}Add Account</button></section>
+    <section class="bg-card border border-border rounded-lg shadow-sm"><div class="px-4 py-3 border-b border-border flex items-center justify-between"><h2 class="text-sm font-semibold">Active Targets</h2><span class="text-xs text-muted-foreground">${D.targets.length}</span></div>
+     <ul class="divide-y divide-border">${D.targets.map(t=>`<li class="px-4 py-2.5 flex items-center gap-2"><div class="min-w-0 flex-1"><div class="flex items-center gap-2">${I("instagram","w-3.5 h-3.5 text-muted-foreground shrink-0")}<span class="text-sm font-medium truncate">${esc(t.handle)}</span></div><div class="flex items-center gap-2 mt-1">${smallBadge(tgtStyle[t.status],t.status)}<span class="text-[11px] text-muted-foreground">${rel(t.last)}</span></div></div>
+      <button class="icon-btn" style="height:1.75rem;width:1.75rem" title="Run now" data-act2="igRun" data-id="${t.id}">${I("play")}</button>
+      <button class="icon-btn" style="height:1.75rem;width:1.75rem" title="${t.status==="Paused"?"Resume":"Pause"}" data-act2="igPause" data-id="${t.id}">${I(t.status==="Paused"?"rotate-ccw":"pause")}</button>
+      <button class="icon-btn text-rose-600" style="height:1.75rem;width:1.75rem" title="Remove" data-act2="igRemove" data-id="${t.id}">${I("x")}</button></li>`).join("")||`<li class="px-4 py-6 text-center text-sm text-muted-foreground">No accounts yet</li>`}</ul></section>
+   </div>
+   <section class="bg-card border border-border rounded-lg shadow-sm min-w-0"><div class="px-4 py-3 border-b border-border flex items-center gap-2 flex-wrap"><h2 class="text-sm font-semibold mr-auto">Unified Feed</h2>
+     <select data-f2="igAcc" class="sel h-8 w-[160px] rounded-md border border-input bg-background px-3 text-xs"><option value="all">All Accounts</option>${D.targets.map(t=>`<option ${f===t.handle?"selected":""}>${t.handle}</option>`).join("")}</select>
+     <select data-f2="igCat" class="sel h-8 w-[150px] rounded-md border border-input bg-background px-3 text-xs"><option value="all">All Categories</option>${["Competitors","Influencers","Partners"].map(x=>`<option ${c===x?"selected":""}>${x}</option>`).join("")}</select></div>
+    <ul class="divide-y divide-border">${posts.map(p=>`<li class="px-4 py-3 hover:bg-muted/40"><div class="flex items-start gap-3"><div class="w-8 h-8 rounded-full bg-muted flex items-center justify-center shrink-0">${I("instagram","w-4 h-4 text-muted-foreground")}</div>
+      <div class="min-w-0 flex-1"><div class="flex items-center gap-2 flex-wrap"><span class="text-sm font-medium">${p.acc}</span>${smallBadge(catStyle[p.cat],p.cat)}<span class="text-[11px] text-muted-foreground">· ${rel(p.at)}</span></div><p class="text-sm text-foreground/90 mt-1">${esc(p.cap)}</p></div>
+      <select data-reclass="${p.id}" class="sel h-7 rounded-md border border-input bg-background px-2 text-xs shrink-0" aria-label="Reclassify"><option selected disabled>Reclassify</option>${["Competitors","Influencers","Partners"].map(x=>`<option>${x}</option>`).join("")}</select></div></li>`).join("")||`<li class="px-4 py-10 text-center text-sm text-muted-foreground">No posts match these filters</li>`}</ul></section>
+  </div></div>`;
+}
+
+// ---- Brand Scan
+const outcomeStyle={"In review":"bg-sky-100 text-sky-800 border-sky-200","Already known":"bg-muted text-muted-foreground border-border",Dropped:"bg-rose-100 text-rose-800 border-rose-200",Ignored:"bg-muted text-muted-foreground border-border"};
+function brandScan(){
+  if(D.openScan){const s=D.scans.find(x=>x.id===D.openScan);
+   return `<div class="space-y-5"><div><button data-act2="closeScan" class="flex text-xs text-muted-foreground hover:text-foreground items-center gap-1.5 mb-1">${I("arrow-left")}Brand Scan</button><h1 class="text-2xl font-bold break-all">${esc(s.name)}</h1><p class="text-sm text-muted-foreground mt-1">${s.found} found · ${s.review} in review · ${s.known} already known · ${s.dropped} dropped · ${fmtDate(s.date)}</p></div>
+   <div class="bg-card border border-border rounded-lg shadow-sm overflow-hidden">${tbl([{t:"#"},{t:"Business"},{t:"Outcome"},{t:"Why"}],s.rows.map((r,i)=>`<tr class="border-b last:border-0"><td class="p-4 text-muted-foreground tabular-nums">${i+1}</td><td class="p-4 font-medium">${esc(r[0])}</td><td class="p-4">${badge(outcomeStyle[r[1]],r[1])}</td><td class="p-4 text-muted-foreground">${esc(r[2])}</td></tr>`).join("")||`<tr><td colspan="4" class="p-10 text-center text-muted-foreground">${esc(s.note||"Nothing found.")}</td></tr>`)}</div>
+   <p class="text-xs text-muted-foreground">Showing a sample of the businesses this scan found.</p></div>`;}
+  return `<div class="space-y-5">${head("Brand Scan","Jewellery · find jewellery businesses named in a PDF or on a web page")}
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+   <section class="bg-card border border-border rounded-lg p-4 shadow-sm"><div class="flex items-center gap-2 mb-3">${I("file-text","w-4 h-4 text-muted-foreground")}<h2 class="text-sm font-semibold">Upload PDF</h2></div>
+    <label class="block border-2 border-dashed border-border rounded-md px-4 py-6 text-center cursor-pointer hover:bg-muted/40">${I("upload","w-5 h-5 mx-auto text-muted-foreground")}<p class="text-sm mt-2">Drop a PDF here</p><p class="text-xs text-muted-foreground mt-0.5">a magazine, an exhibitor list or a report</p><input type="file" accept="application/pdf" class="hidden" data-pdf="brand"></label>
+    <button data-act2="pickPdf" class="green mt-3 w-full inline-flex items-center justify-center gap-2 h-9 rounded-md text-sm font-medium ic">${I("upload","w-4 h-4")}Upload</button></section>
+   <section class="bg-card border border-border rounded-lg p-4 shadow-sm"><div class="flex items-center gap-2 mb-3">${I("globe","w-4 h-4 text-muted-foreground")}<h2 class="text-sm font-semibold">Scan Article</h2></div>
+    <div class="relative">${I("link","absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-muted-foreground")}<input id="bs-url" placeholder="https://example.com/jewellery" class="flex h-9 w-full rounded-md border border-input bg-background pl-8 pr-3 text-sm"></div>
+    <label class="flex items-center gap-2 mt-3 text-xs text-muted-foreground">${switchEl(!!D.follow,"follow","x")}Also read pages linked from this one (up to 12)</label>
+    <button data-act2="scanUrl" class="green mt-3 w-full inline-flex items-center justify-center gap-2 h-9 rounded-md text-sm font-medium ic">${I("globe","w-4 h-4")}Scan</button></section>
+  </div>
+  <section class="bg-card border border-border rounded-lg shadow-sm"><div class="px-4 py-3 border-b border-border flex items-center justify-between gap-3"><div class="flex items-center gap-2">${I("newspaper","w-4 h-4 text-muted-foreground")}<h2 class="text-sm font-semibold">Publications</h2><span class="text-xs text-muted-foreground">${D.pubs.filter(p=>p.on).length} watched</span></div>${outBtn("addPub",I("plus")+"Add publication")}</div>
+   <div class="divide-y divide-border">${D.pubs.map((p,i)=>`<div class="flex items-center gap-3 px-4 py-2.5"><span class="w-5 shrink-0 text-xs text-muted-foreground tabular-nums">${i+1}</span>${switchEl(p.on,"togglePub",p.id)}<div class="min-w-0 flex-1"><p class="text-sm font-medium truncate">${esc(p.name)}</p><span class="text-xs text-muted-foreground inline-flex items-center gap-1">${esc(new URL(p.url).host)}${I("external-link","w-3 h-3")}</span></div>${ghostBtn("scanPub",I("globe")+"Scan now",`data-id="${p.id}" ${p.on?"":"disabled"}`, "h-8 text-xs disabled:opacity-40")}<button class="icon-btn text-muted-foreground" data-act2="dropPub" data-id="${p.id}" aria-label="Remove ${esc(p.name)}">${I("x")}</button></div>`).join("")}</div></section>
+  <section class="bg-card border border-border rounded-lg shadow-sm"><div class="px-4 py-3 border-b border-border"><h2 class="text-sm font-semibold">Recent Scans</h2></div>
+   ${tbl([{t:"#"},{t:"Name"},{t:"Type"},{t:"Status"},{t:"Found",r:1},{t:"In review",r:1},{t:"Already known",r:1},{t:"Dropped",r:1},{t:"Date"}],D.scans.map((s,i)=>`<tr class="border-b last:border-0 hover:bg-muted/50 cursor-pointer" data-openscan="${s.id}"><td class="p-4 text-muted-foreground tabular-nums">${i+1}</td><td class="p-4 font-medium"><div class="flex items-center gap-2">${I(s.type==="PDF"?"file-text":"globe","w-3.5 h-3.5 text-muted-foreground shrink-0")}<span class="shrink-0 rounded-md bg-muted px-2 py-0.5 font-mono text-[11px] text-muted-foreground">${s.cid}</span><span class="truncate max-w-[280px]">${esc(s.name)}</span></div>${s.note?`<p class="text-xs text-muted-foreground mt-0.5">${esc(s.note)}</p>`:""}</td><td class="p-4">${smallBadge("border-border",s.type)}</td><td class="p-4">${smallBadge(runStyle[s.status==="Scanning"?"Running":s.status],s.status)}</td><td class="p-4 text-right tabular-nums">${s.found}</td><td class="p-4 text-right tabular-nums text-muted-foreground">${s.review}</td><td class="p-4 text-right tabular-nums text-muted-foreground">${s.known}</td><td class="p-4 text-right tabular-nums text-muted-foreground">${s.dropped}</td><td class="p-4 text-muted-foreground whitespace-nowrap">${fmtDT(s.date)}</td></tr>`).join(""))}</section></div>`;
+}
+function fakeScan(name,type){
+  const s={id:"s"+Date.now(),cid:"JW-BS-0"+(15+D.scans.length),name,type,status:"Scanning",found:0,review:0,known:0,dropped:0,date:new Date().toISOString(),rows:[]};
+  D.scans.unshift(s);render();
+  setTimeout(()=>{Object.assign(s,{status:"Completed",found:9,review:3,known:4,dropped:2,rows:[["Noor Al Khaleej Gold","In review","21K/22K gold, Dubai. Instagram only so far"],["Rania Fine Jewels","In review","18K diamond line, Abu Dhabi"],["Kuwait Gold Palace","In review","Kuwait based, solid gold"],["Al Wasl 22K Atelier","Already known","Matches an approved brand"],["Glam Costume Hub","Dropped","DQ-PROD: costume jewellery only"],["Istanbul Gold Bazaar","Dropped","DQ-GEO: outside UAE/GCC"]]});
+   [["Noor Al Khaleej Gold","Dubai, UAE"],["Rania Fine Jewels","Abu Dhabi, UAE"],["Kuwait Gold Palace","Kuwait City, Kuwait"]].forEach(([n,l],i)=>S.review.unshift({id:"r"+Date.now()+i,name:n,type:"Brand",source:"Google Search",location:l,campaign:s.cid,conf:"Supporting",found:new Date().toISOString(),dup:"None",reason:"Found by Brand Scan"}));
+   render();toast("Scan finished: "+s.cid,"9 found · 3 sent to the Review Queue · 2 dropped");},1800);
+}
+
+// ---- Event Scan
+const allEvents=()=>D.pages.flatMap(p=>p.events.map(e=>({...e,page:p.name})));
+function eventRows(list){return list.map((ev,i)=>`<tr class="border-b last:border-0"><td class="p-4 text-muted-foreground tabular-nums">${i+1}</td><td class="p-4"><span class="inline-flex items-center gap-1.5 font-medium">${esc(ev.name)}${I("external-link","w-3.5 h-3.5 text-muted-foreground")}</span></td><td class="p-4 text-muted-foreground whitespace-nowrap">${fmtDate(ev.date)}</td><td class="p-4 text-xs uppercase tracking-wide text-muted-foreground">${esc(ev.type)}</td><td class="p-4"><div class="flex items-center justify-end gap-2">${
+  ev.status==="pending_review"?`<button data-act2="evOk" data-id="${ev.id}" class="green inline-flex items-center gap-1.5 h-8 px-3 rounded-md text-xs font-medium ic">${I("check")}Relevant</button>${outBtn("evNo","Not relevant",`data-id="${ev.id}"`)}`
+  :ev.status==="approved"?`${ghostBtn("evEx",I("users")+(ev.read?"Exhibitors ("+ev.read+")":"Exhibitors"),`data-id="${ev.id}"`)}<span class="inline-flex items-center rounded-full border border-emerald-200 bg-emerald-50 text-emerald-700 text-[11px] font-medium px-2.5 py-0.5 whitespace-nowrap">In the calendar</span>`
+  :`<button data-act2="evOk" data-id="${ev.id}" class="text-xs text-muted-foreground hover:text-foreground" title="Mark relevant instead">Not relevant</button>`}</div></td></tr>`).join("");}
+function eventScan(){
+  if(D.openPage){const p=D.pages.find(x=>x.id===D.openPage);const waiting=p.events.filter(e=>e.status==="pending_review").length;
+   return `<div class="space-y-5"><div class="flex items-start justify-between gap-4 flex-wrap"><div class="min-w-0"><button data-act2="closePage" class="flex text-xs text-muted-foreground hover:text-foreground items-center gap-1.5 mb-1">${I("arrow-left")}Event Scan</button><h1 class="text-2xl font-bold break-all">${esc(p.name)}</h1><p class="text-sm text-muted-foreground mt-1">${p.events.length} events listed · ${waiting} still to decide · read ${fmtDate(p.lastRead)}</p></div>
+    <div class="flex items-center gap-2">${outBtn("deep",I("scan-search")+"Deep scan ("+p.events.length+")","","h-9 text-xs")}${outBtn("rescan",I("refresh-cw")+"Scan again",`data-id="${p.id}"`,"h-9 text-xs")}</div></div>
+    <div class="bg-card border border-border rounded-lg shadow-sm overflow-hidden">${tbl([{t:"#"},{t:"Event"},{t:"Date"},{t:"Sector"},{t:"Relevant?",r:1}],eventRows([...p.events].sort((a,b)=>a.date.localeCompare(b.date))))}</div></div>`;}
+  const view=`<div class="flex items-center gap-1 bg-muted/50 border border-border rounded-md p-1">${[["events","Scans","scan-line"],["list","List","list"],["calendar","Calendar","calendar-days"]].map(([v,l,ic])=>`<button data-act2="evView" data-id="${v}" class="inline-flex items-center gap-1.5 h-7 px-3 rounded text-xs font-medium ${D.evView===v?"bg-card shadow-sm text-foreground":"text-muted-foreground"}">${I(ic)}${l}</button>`).join("")}</div>`;
+  let body;
+  if(D.evView==="list"){body=`<div class="bg-card border border-border rounded-lg shadow-sm overflow-hidden">${tbl([{t:"#"},{t:"Event"},{t:"Date"},{t:"Sector"},{t:"Relevant?",r:1}],eventRows(allEvents().sort((a,b)=>a.date.localeCompare(b.date))))}</div>`;}
+  else if(D.evView==="calendar"){const ap=allEvents().filter(e=>e.status==="approved").sort((a,b)=>a.date.localeCompare(b.date));const by={};ap.forEach(e=>{const k=new Date(e.date).toLocaleDateString(undefined,{month:"long",year:"numeric"});(by[k]=by[k]||[]).push(e);});
+   body=Object.keys(by).length?`<div class="grid gap-4 sm:grid-cols-2">${Object.entries(by).map(([m,es])=>`<div class="bg-card border border-border rounded-lg shadow-sm p-4"><p class="text-[11px] uppercase tracking-wider text-muted-foreground font-semibold mb-3">${m}</p><ul class="space-y-2">${es.map(e=>`<li class="flex items-center gap-3"><span class="w-10 h-10 rounded-md bg-muted flex flex-col items-center justify-center text-xs font-bold leading-none">${new Date(e.date).getDate()}</span><div><p class="text-sm font-medium">${esc(e.name)}</p><p class="text-xs text-muted-foreground">${esc(e.type)}</p></div></li>`).join("")}</ul></div>`).join("")}</div>`:empty("No events in the calendar yet. Mark an event relevant to add it.");}
+  else body=`<div class="bg-card border border-border rounded-lg shadow-sm overflow-hidden"><div class="px-5 py-3 bg-muted/40 border-b border-border flex items-center gap-2">${I("globe","w-4 h-4 text-muted-foreground")}<span class="text-sm font-semibold">Events pages</span>${smallBadge("border-border font-normal",D.pages.length+" URL pages")}<span class="ml-auto">${ghostBtn("addEvent",I("plus")+"Add event")}</span></div>
+   ${tbl([{t:"#"},{t:"Page"},{t:"Events",r:1},{t:"To decide",c:1},{t:"Last read"},{t:""}],D.pages.map((p,i)=>{const td=p.events.filter(e=>e.status==="pending_review").length;return `<tr class="border-b last:border-0 hover:bg-muted/50 cursor-pointer" data-openpage="${p.id}"><td class="p-4 text-muted-foreground tabular-nums">${i+1}</td><td class="p-4"><span class="inline-flex items-center gap-1.5 font-medium">${esc(p.name)}${I("external-link","w-3 h-3 text-muted-foreground")}</span></td><td class="p-4 text-right tabular-nums">${p.events.length}</td><td class="p-4 text-center">${td?`<span class="inline-flex items-center justify-center min-w-6 h-6 px-1.5 rounded-full border border-amber-200 bg-amber-50 text-amber-800 text-xs font-semibold">${td}</span>`:`<span class="text-muted-foreground">0</span>`}</td><td class="p-4 text-muted-foreground">${p.reading?"Reading…":fmtDate(p.lastRead)}</td><td class="p-4"><div class="flex items-center justify-end gap-1">${outBtn("rescan",I("refresh-cw")+"Scan",`data-id="${p.id}"`)}<button class="icon-btn text-muted-foreground hover:text-rose-700" title="Remove from the list (its events stay)" data-act2="rmPage" data-id="${p.id}">${I("trash-2")}</button></div></td></tr>`;}).join(""))}</div>`;
+  return `<div class="space-y-6">${head("Event Scan","Jewellery · find events, approve them, then read their exhibitors as leads",view)}
+  ${D.evView==="events"?`<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+   <div class="bg-card border border-border rounded-lg shadow-sm p-5 space-y-4"><div class="flex items-center gap-2">${I("globe","w-4 h-4 text-muted-foreground")}<h2 class="text-sm font-semibold">Scan Website for Events</h2></div>
+    <div class="relative">${I("link","absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-muted-foreground")}<input id="ev-url" placeholder="https://example.com/events" class="flex h-10 w-full rounded-md border border-input bg-background pl-9 pr-3 text-sm"></div>
+    <div class="space-y-1"><p class="text-xs text-muted-foreground">Reads the page and lists its jewellery and related events (exhibitions, launches, pop-ups) for review.</p><p class="text-[11px] text-muted-foreground/80">Usually takes one to two minutes.</p></div>
+    <label class="flex items-start gap-2.5 cursor-pointer"><input type="checkbox" class="mt-0.5 h-4 w-4 accent-[hsl(220_20%_15%)]"><span class="text-xs text-muted-foreground leading-relaxed"><span class="font-medium text-foreground">Deep scan</span>: also read the pages linked from this one (up to 12), such as each event's own page. Slower, and each page is paid for.</span></label>
+    <button data-act2="evScan" class="green w-full inline-flex items-center justify-center gap-2 h-10 rounded-md text-sm font-medium ic">${I("calendar-days","w-4 h-4")}Scan for Events</button></div>
+   <div class="bg-card border border-border rounded-lg shadow-sm p-5 space-y-4 flex flex-col"><div class="flex items-center gap-2">${I("file-text","w-4 h-4 text-muted-foreground")}<h2 class="text-sm font-semibold">Upload Calendar</h2></div>
+    <label class="flex-1 flex flex-col items-center justify-center border-2 border-dashed border-border rounded-md px-4 py-6 text-center cursor-pointer hover:bg-muted/40">${I("upload","w-5 h-5 text-muted-foreground")}<p class="text-sm mt-2">Drop a PDF here</p><p class="text-xs text-muted-foreground mt-0.5">an events calendar or brochure, or click to browse</p><input type="file" accept="application/pdf" class="hidden" data-pdf="event"></label>
+    <p class="text-xs text-muted-foreground">Events found go to Pending review, like a scanned page.</p></div></div>`:""}
+  ${body}</div>`;
+}
+const findEv=id=>D.pages.flatMap(p=>p.events).find(e=>e.id===id);
+
+// ---- Automation Monitor
+function automation(){
+  if(!D.admin)return `<div class="flex justify-center py-10"><div class="bg-card border border-border rounded-lg shadow-sm p-6 w-full max-w-sm text-center"><div class="mx-auto w-10 h-10 rounded-full bg-muted flex items-center justify-center">${I("lock","w-5 h-5 text-muted-foreground")}</div>
+   <h1 class="text-lg font-semibold mt-4">Admin Verification</h1><p class="text-sm text-muted-foreground mt-1">Automation Monitor is restricted to admins.</p>
+   <input id="am-pw" type="password" placeholder="Enter admin password" class="mt-4 flex h-9 w-full rounded-md border border-input bg-background px-3 text-sm">
+   <button data-act2="unlock" class="green w-full mt-4 h-9 rounded-md text-sm font-medium">Unlock</button><p class="text-[11px] text-muted-foreground mt-3">Demo: any password works.</p></div></div>`;
+  const live=D.runs.filter(r=>r.status==="Running").length, tot=D.runs.reduce((a,r)=>a+r.neu,0), dup=D.runs.reduce((a,r)=>a+r.dup,0);
+  const stat=(l,v,h)=>`<div class="bg-card border border-border rounded-lg px-4 py-3 min-w-[150px]"><p class="text-[10px] uppercase tracking-wider text-muted-foreground font-semibold">${l}</p><div class="flex items-baseline gap-2 mt-1"><span class="text-xl font-bold tabular-nums">${v}</span><span class="text-[11px] text-muted-foreground whitespace-nowrap">${h}</span></div></div>`;
+  const auto=`${D.halted?`<div class="flex items-center justify-between gap-3 rounded-lg border border-rose-200 bg-rose-50 text-rose-800 px-4 py-3 mb-4 text-sm"><div class="flex items-center gap-2 ic">${I("octagon-x","w-4 h-4 shrink-0")}<span><span class="font-semibold">Emergency stop is on</span> since ${fmtDT(D.halted)} — no campaign, scan, enrichment or research will start until you resume.</span></div>${outBtn("resumeAll",I("circle-play","w-4 h-4")+"Resume","","h-9 text-sm")}</div>`:""}
+   <div class="flex flex-col-reverse gap-3 lg:flex-row lg:items-start lg:justify-between mb-4"><div class="grid grid-cols-2 sm:grid-cols-3 gap-3">${stat("Active Campaigns",live,"Running")}${stat("Total Leads Found",tot,"All automations")}${stat("Duplicates Filtered",dup,"Deduped")}</div>
+    <div class="flex items-center justify-end gap-2 shrink-0"><button data-act2="stopAll" ${D.halted?"disabled":""} class="inline-flex items-center gap-1.5 h-8 px-3 rounded-md border border-rose-300 text-rose-700 bg-rose-50 hover:bg-rose-100 text-xs font-medium ic disabled:opacity-50" title="Stop every run that spends credit, immediately">${I("octagon-x")}Emergency Stop</button><button data-act2="newCampaign" class="green inline-flex items-center gap-1.5 h-8 px-3 rounded-md text-xs font-medium ic">${I("rocket")}Launch Campaign</button></div></div>
+   <div class="bg-card border border-border rounded-lg shadow-sm overflow-hidden">${tbl([{t:"Campaign"},{t:"Source"},{t:"Last Run"},{t:"Searched",r:1},{t:"New",r:1},{t:"Duplicates",r:1},{t:"Cost",r:1},{t:"Status"},{t:"Next Run"},{t:"Actions",r:1}],
+    D.runs.map(a=>`<tr class="border-b last:border-0 hover:bg-muted/50 text-sm"><td class="px-3 py-3 font-medium min-w-[220px]"><div class="truncate max-w-[240px]">${esc(a.name)}</div><div class="mt-0.5 flex items-center gap-1.5 text-[11px] text-muted-foreground font-normal"><span class="font-mono">${a.cid}</span><span>·</span><span>Jewellery</span></div></td>
+     <td class="px-3 py-3 whitespace-nowrap">${srcLink(a.src)}</td><td class="px-3 py-3 text-xs text-muted-foreground whitespace-nowrap">${fmtDT(a.last)}</td><td class="px-3 py-3 text-right tabular-nums text-muted-foreground">${a.searched}</td><td class="px-3 py-3 text-right font-medium tabular-nums">${a.neu}</td><td class="px-3 py-3 text-right tabular-nums text-muted-foreground">${a.dup}</td><td class="px-3 py-3 text-right tabular-nums">${a.cost}</td>
+     <td class="px-3 py-3 whitespace-nowrap"><div class="flex items-center gap-2">${badge(runStyle[a.status],a.status)}${a.status==="Failed"?outBtn("retry",I("rotate-ccw","w-3 h-3")+"Retry",`data-id="${a.id}"`,"h-6 text-[11px]"):""}</div>${a.err?`<p class="text-[11px] text-rose-700 mt-1 whitespace-normal max-w-[220px]">${esc(a.err)}</p>`:""}</td>
+     <td class="px-3 py-3 text-xs text-muted-foreground whitespace-nowrap">${a.next==="—"?"—":fmtDT(a.next)}</td><td class="px-3 py-3"><div class="flex items-center gap-1 justify-end">${ghostBtn("viewRun",I("eye")+"View",`data-id="${a.id}"`)}<button class="icon-btn" title="Run now" data-act2="runNow" data-id="${a.id}">${I("play")}</button></div></td></tr>`).join(""))}</div>`;
+  const TH=[["Real gold named (18K–24K)","Critical"],["Based in UAE / GCC","Critical"],["Official website or Instagram","Important"],["Exhibitor list, directory or award","Important"],["Multiple locations","Nice to have"],["Active ad campaign","Nice to have"],["Public email","Not important"]];
+  const research=`<div class="bg-card border border-border rounded-lg shadow-sm p-5 space-y-4"><div><h2 class="text-sm font-semibold">Research Agent</h2><p class="text-xs text-muted-foreground mt-1">The signals the agent weighs when it researches a lead, and when it approves, reviews or rejects.</p></div>
+    <div class="divide-y divide-border border border-border rounded-md">${TH.map(([l,w])=>`<div class="flex items-center justify-between gap-3 px-3 py-2"><span class="text-sm">${l}</span><select class="sel h-8 w-[150px] rounded-md border border-input bg-background px-3 text-xs" data-weight="${esc(l)}">${["Not important","Nice to have","Important","Critical"].map(x=>`<option ${x===w?"selected":""}>${x}</option>`).join("")}</select></div>`).join("")}</div>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">${[["Auto-approve","All critical + 2 important","bg-emerald-50 text-emerald-800 border-emerald-200"],["Review","Any critical missing proof","bg-sky-50 text-sky-800 border-sky-200"],["Reject","Fails a DQ rule","bg-rose-50 text-rose-800 border-rose-200"]].map(([a,b,c])=>`<div class="rounded-lg border px-4 py-3 ${c}"><p class="text-[10px] uppercase tracking-wider font-semibold">${a}</p><p class="text-sm mt-1">${b}</p></div>`).join("")}</div>
+    <div class="flex justify-end">${greenBtn("saveAgent","Save")}</div></div>`;
+  return `<div class="space-y-6"><div class="flex items-start justify-between gap-4 flex-wrap"><div><p class="text-[11px] uppercase tracking-wider text-muted-foreground font-semibold">Jewellery</p><h1 class="text-2xl font-bold">Automation Monitor</h1><p class="text-sm text-muted-foreground mt-1">Automations and research agent configuration for Jewellery.</p></div>
+   <div class="flex items-center gap-2"><span class="inline-flex items-center gap-1 rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-emerald-50 text-emerald-800 border-emerald-200 ic">${I("shield-check")}Admin</span></div></div>
+   <div>${tabs([["automations","Automations",D.runs.length],["scoring","Research Agent",TH.length]],D.amTab,"amTab")}<div class="mt-4 fade">${D.amTab==="automations"?auto:research}</div></div></div>`;
+}
+
+// ---- Activity History
+function activity(){
+  const a=D.act, q=a.q.toLowerCase();
+  const rows=D.log.filter(l=>(!q||(l.name+" "+l.d).toLowerCase().includes(q))&&(a.type==="All"||l.t===a.type)&&(a.user==="All"||l.user===a.user));
+  const users=[...new Set(D.log.map(l=>l.user))].sort();
+  const ff=(label,key,opts)=>`<div class="space-y-1 min-w-0"><p class="text-[11px] font-medium uppercase tracking-wide text-muted-foreground">${label}</p><select data-actf="${key}" class="sel h-9 w-full rounded-md border border-input bg-background px-3 text-sm">${["All",...opts].map(o=>`<option ${a[key]===o?"selected":""}>${o}</option>`).join("")}</select></div>`;
+  const sum=(icon,l,v,tone)=>`<div class="bg-card border border-border rounded-lg p-3 shadow-sm flex items-center gap-3"><div class="p-2 rounded-md ${tone}">${I(icon,"w-4 h-4")}</div><div><p class="text-xs text-muted-foreground">${l}</p><p class="text-lg font-bold tabular-nums">${v}</p></div></div>`;
+  const cnt=t=>D.log.filter(l=>l.t===t).length;
+  return `<div class="space-y-6"><div><p class="text-[11px] uppercase tracking-wider text-muted-foreground font-semibold">Jewellery</p><h1 class="text-2xl font-bold mt-1">Activity History</h1><p class="text-sm text-muted-foreground mt-1">Activity for Jewellery leads, sources, automations, and tasks.</p></div>
+  <div class="grid grid-cols-1 lg:grid-cols-[1fr_280px] gap-6"><div class="space-y-4 min-w-0">
+   <div class="bg-card border border-border rounded-lg p-3 shadow-sm space-y-3"><div class="flex items-center gap-2"><div class="relative flex-1">${I("search","absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-muted-foreground")}<input data-q="act" value="${esc(a.q)}" placeholder="Search by lead name or description…" class="flex h-9 w-full rounded-md border border-input bg-background pl-8 pr-3 text-sm"></div>${a.q||a.type!=="All"||a.user!=="All"?ghostBtn("clearAct","Clear filters","","h-9 text-xs"):""}</div>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-2">${ff("Activity","type",Object.keys(actStyle))}${ff("User","user",users)}<div class="space-y-1 min-w-0"><p class="text-[11px] font-medium uppercase tracking-wide text-muted-foreground">Date</p><select class="sel h-9 w-full rounded-md border border-input bg-background px-3 text-sm"><option>Any time</option><option>Today</option><option>Last 7 days</option><option>Last 30 days</option></select></div></div></div>
+   <div class="bg-card border border-border rounded-lg p-5 shadow-sm">${rows.length?`<ol class="relative border-l border-border ml-2 space-y-5">${rows.map(l=>`<li class="pl-5 relative"><span class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-card border-2 border-emerald-600"></span><div class="w-full bg-card hover:bg-muted/40 border border-border rounded-md p-3"><div class="flex items-center justify-between gap-3 flex-wrap"><div class="flex items-center gap-2 min-w-0">${badge(actStyle[l.t],l.t)}<span class="text-sm font-medium truncate">${esc(l.name)}</span><span class="text-xs text-muted-foreground">· Jewellery</span></div><div class="text-xs text-muted-foreground whitespace-nowrap">${esc(l.user)} · ${fmtDT(l.at)}</div></div><p class="text-sm text-muted-foreground mt-1.5 leading-snug">${esc(l.d)}</p></div></li>`).join("")}</ol>`:`<div class="text-center text-sm text-muted-foreground py-12">No activity matches the current filters.</div>`}</div></div>
+   <aside class="space-y-3 lg:sticky lg:top-20 h-fit"><p class="text-[11px] uppercase tracking-wider text-muted-foreground font-semibold px-1">All time</p>${sum("history","Activities",D.log.length,"bg-stone-100 text-stone-700")}${sum("circle-check","Approvals",cnt("Approval"),"bg-emerald-100 text-emerald-700")}${sum("circle-x","Rejections",cnt("Rejection"),"bg-rose-100 text-rose-700")}${sum("copy","Duplicates",cnt("Duplicate"),"bg-amber-100 text-amber-700")}${sum("clipboard-list","Tasks",cnt("Task"),"bg-teal-100 text-teal-700")}</aside></div></div>`;
+}
+
+// ---- router
+const SCREENS={"IG Monitor":igMonitor,"Brand Scan":brandScan,"Event Scan":eventScan,"Automation Monitor":automation,"Activity History":activity};
+function render(){
+  document.getElementById("sidenav").innerHTML=NAV.map(([i,l])=>`<a href="#" data-side="${l}" class="flex items-center gap-2.5 px-3 py-2 rounded-md text-sm transition-colors ${st.screen===l?"bg-muted text-foreground font-medium":"text-muted-foreground hover:bg-muted/60 hover:text-foreground"}"><i data-lucide="${i}" class="w-4 h-4"></i>${l}</a>`).join("");
+  if(st.screen==="Leads"){renderLeads();return;}
+  const focus=document.activeElement?.dataset?.q, pos=document.activeElement?.selectionStart;
+  document.getElementById("page").innerHTML=`<div class="fade">${SCREENS[st.screen]()}</div>`;
+  lucide.createIcons();
+  if(focus){const el=document.querySelector(`[data-q="${focus}"]`);if(el){el.focus();el.setSelectionRange(pos,pos);}}
+}
+document.addEventListener("input",e=>{if(e.target.dataset.q==="act"){D.act.q=e.target.value;render();}});
+
+document.addEventListener("click",e=>{
+  const os=e.target.closest("[data-openscan]"); if(os){D.openScan=os.dataset.openscan;render();return;}
+  const op=e.target.closest("[data-openpage]"); if(op&&!e.target.closest("[data-act2]")){D.openPage=op.dataset.openpage;render();return;}
+  const b=e.target.closest("[data-act2]"); if(!b||b.disabled)return;
+  const id=b.dataset.id, val=id&&document.getElementById;
+  const t=D.targets.find(x=>x.id===id), pub=D.pubs.find(x=>x.id===id), run=D.runs.find(x=>x.id===id);
+  switch(b.dataset.act2){
+   case"igAdd":{const v=document.getElementById("ig-new").value.trim();if(!v)return;const h="@"+v.replace(/^https?:\/\/(www\.)?instagram\.com\//i,"").replace(/[@\/]/g,"");D.targets.unshift({id:"t"+Date.now(),handle:h,status:"Active",last:new Date().toISOString()});render();toast("Account added: "+h,"Its posts will appear in the Unified Feed.");break;}
+   case"igRun":t.last=new Date().toISOString();if(t.status==="Error")t.status="Active";render();toast("Checked "+t.handle,"No new posts since the last run.");break;
+   case"igPause":t.status=t.status==="Paused"?"Active":"Paused";render();break;
+   case"igRemove":D.targets=D.targets.filter(x=>x!==t);render();toast("Account removed: "+t.handle);break;
+   case"closeScan":D.openScan=null;render();break;
+   case"pickPdf":document.querySelector('[data-pdf="brand"]').click();break;
+   case"scanUrl":{const v=document.getElementById("bs-url").value.trim();if(!v){toast("Enter a page address first");return;}fakeScan(v.replace(/^https?:\/\//,""),"URL");break;}
+   case"follow":D.follow=!D.follow;render();break;
+   case"togglePub":pub.on=!pub.on;render();break;
+   case"scanPub":fakeScan(new URL(pub.url).host+new URL(pub.url).pathname,"URL");break;
+   case"dropPub":D.pubs=D.pubs.filter(x=>x!==pub);render();toast("Publication removed: "+pub.name);break;
+   case"addPub":dialog(`<div><h3 class="text-lg font-semibold">Add publication</h3><p class="text-sm text-muted-foreground mt-1.5">A magazine or news page to scan for jewellery businesses.</p></div>${field("Name",`<input id="pub-name" class="${inputCls}" placeholder="Publication name">`)}${field("Address",`<input id="pub-url" class="${inputCls}" placeholder="https://example.com/jewellery">`)}${footer(outline("Cancel")+`<button data-act2="doAddPub" class="green h-10 px-4 rounded-md text-sm font-medium">Add</button>`)}`);break;
+   case"doAddPub":{const n=document.getElementById("pub-name").value.trim()||"New publication";let u=document.getElementById("pub-url").value.trim()||"https://example.com/jewellery";if(!/^https?:/.test(u))u="https://"+u;try{new URL(u);}catch{u="https://example.com/jewellery";}D.pubs.push({id:"u"+Date.now(),name:n,url:u,on:true});close();render();toast("Publication added: "+n);break;}
+   case"evView":D.evView=id;render();break;
+   case"closePage":D.openPage=null;render();break;
+   case"evOk":{const ev=findEv(id);ev.status="approved";render();toast("Marked relevant: "+ev.name,"Added to the calendar. Read its exhibitors when the list is out.");break;}
+   case"evNo":{const ev=findEv(id);ev.status="rejected";render();break;}
+   case"evEx":{const ev=findEv(id);const names=[["Sapphire Lane Jewellers","Dubai, UAE"],["Al Majd Gold","Muscat, Oman"],["Pearl Coast Designs","Manama, Bahrain"]];names.forEach(([n,l],i)=>S.review.unshift({id:"r"+Date.now()+i,name:n,type:"Brand",source:"Google Search",location:l,campaign:ev.name,conf:"High",found:new Date().toISOString(),dup:"None",reason:"Exhibitor at "+ev.name}));ev.read=(ev.read||0)+names.length;render();toast("Exhibitors read: "+ev.name,"3 exhibitors sent to the Review Queue.");break;}
+   case"evScan":{const v=document.getElementById("ev-url").value.trim();if(!v){toast("Enter a page address first");return;}const p={id:"e"+Date.now(),name:v.replace(/^https?:\/\//,""),url:v,lastRead:new Date().toISOString(),reading:true,events:[]};D.pages.push(p);render();
+     setTimeout(()=>{p.reading=false;p.events=[{id:"v"+Date.now(),name:"Gulf Pearl & Gold Expo",date:"2027-01-18",type:"Jewellery exhibition",status:"pending_review"},{id:"v"+Date.now()+1,name:"Diamond Week Pop-up",date:"2026-12-05",type:"Jewellery pop-up",status:"pending_review"}];render();toast("Event scan finished","2 events found and waiting for a decision.");},1500);break;}
+   case"rescan":{const p=D.pages.find(x=>x.id===id);p.lastRead=new Date().toISOString();render();toast("Scan finished: "+p.name,"No new events since the last read.");break;}
+   case"deep":toast("Deep scan finished","Each event's own page was read. Sectors updated.");break;
+   case"rmPage":D.pages=D.pages.filter(x=>x.id!==id);render();toast("Page removed from the list","Its events stay in the calendar.");break;
+   case"addEvent":dialog(`<div><h3 class="text-lg font-semibold">Add event</h3></div>${field("Event name",`<input id="ae-name" class="${inputCls}" placeholder="Event name">`)}${field("Date",`<input id="ae-date" type="date" class="${inputCls}" value="2027-03-01">`)}${field("Venue, city",`<input class="${inputCls}" placeholder="Venue, city">`)}${field("Event page",`<input class="${inputCls}" placeholder="Event page">`)}${footer(outline("Cancel")+`<button data-act2="doAddEvent" class="green h-10 px-4 rounded-md text-sm font-medium">Add</button>`)}`);break;
+   case"doAddEvent":{let p=D.pages.find(x=>x.id==="manual");if(!p){p={id:"manual",name:"Manual PDF Upload",url:"",lastRead:new Date().toISOString(),events:[]};D.pages.push(p);}const n=document.getElementById("ae-name").value.trim()||"New event";p.events.push({id:"v"+Date.now(),name:n,date:document.getElementById("ae-date").value||"2027-03-01",type:"Jewellery exhibition",status:"approved"});close();render();toast("Event added: "+n);break;}
+   case"unlock":D.admin=true;render();break;
+   case"lock":D.admin=false;render();break;
+   case"resetPw":dialog(`<div><h3 class="text-base font-semibold">Reset Admin Password</h3><p class="text-xs text-muted-foreground mt-1">Controls access to the Automation Monitor.</p></div>${["Current Password","New Password","Confirm New Password"].map(l=>field(l,`<input type="password" class="${inputCls} h-9">`)).join("")}${footer(outline("Cancel")+`<button data-act="fake" data-msg="Password updated" class="green h-9 px-4 rounded-md text-sm font-medium">Update Password</button>`)}`);break;
+   case"stopAll":dialog(`<div><h3 class="text-lg font-semibold">Stop everything now?</h3><p class="text-sm text-muted-foreground mt-1.5">Every run in progress is aborted immediately — LinkedIn, Google, Meta Ads and Shopify campaigns, Brand Scan, Event Scan, IG Monitor, enrichment and research. What they had already found is kept. Nothing that spends credit will start again, including scheduled campaigns, until someone presses Resume.</p></div>${footer(outline("Cancel")+`<button data-act2="doStop" class="h-10 px-4 rounded-md bg-rose-600 hover:bg-rose-700 text-white text-sm font-medium">Stop everything</button>`)}`);break;
+   case"doStop":D.halted=new Date().toISOString();D.runs.forEach(r=>{if(r.status==="Running")r.status="Stopped";});close();render();toast("Emergency stop on","Every run stopped. What they found is kept.");break;
+   case"resumeAll":D.halted=false;render();toast("Automations resumed","Scheduled campaigns will start at their next run.");break;
+   case"retry":case"runNow":if(D.halted){toast("Emergency stop is on","Resume before starting a run.");return;}run.status="Running";run.err=null;run.last=new Date().toISOString();render();toast("Campaign started: "+run.cid,run.name);
+     setTimeout(()=>{run.status="Completed";run.searched+=40;run.neu+=4;run.dup+=12;render();toast("Campaign finished: "+run.cid,"4 new leads, 12 duplicates filtered");},2000);break;
+   case"viewRun":dialog(`<div><p class="text-[11px] uppercase tracking-wider text-muted-foreground font-semibold font-mono">${run.cid}</p><h3 class="text-lg font-semibold mt-1">${esc(run.name)}</h3><p class="text-sm text-muted-foreground">${run.src} · last run ${fmtDT(run.last)}</p></div>
+     <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">${[["Searched",run.searched],["New",run.neu],["Duplicates",run.dup],["Cost",run.cost]].map(([l,v])=>`<div class="bg-card border border-border rounded-lg px-3 py-2"><p class="text-[10px] uppercase tracking-wider text-muted-foreground font-semibold">${l}</p><p class="text-lg font-bold tabular-nums">${v}</p></div>`).join("")}</div>
+     <div class="text-sm space-y-1.5"><p class="font-medium">Where the new leads went</p><p class="text-muted-foreground">${Math.round(run.neu*.4)} auto-approved · ${Math.round(run.neu*.45)} sent to the Review Queue · ${run.neu-Math.round(run.neu*.4)-Math.round(run.neu*.45)} dropped with a reason code</p></div>`,true);break;
+   case"newCampaign":dialog(`<div><h3 class="text-lg font-semibold">Launch Campaign</h3><p class="text-sm text-muted-foreground mt-1.5">Search a source for jewellery leads. Everything found goes through the classifier.</p></div>
+     ${field("Campaign name",`<input id="nc-name" class="${inputCls}" value="Gold jewellers, Abu Dhabi">`)}<div class="grid grid-cols-2 gap-3">${field("Source",`<select id="nc-src" class="sel ${inputCls} bg-card">${["Google Maps","Google Search","LinkedIn","Meta Ads","Shopify"].map(s=>`<option>${s}</option>`).join("")}</select>`)}${field("Repeat",`<select class="sel ${inputCls} bg-card"><option>Once</option><option>Daily</option><option>Weekly</option></select>`)}</div>
+     ${field("Keywords",`<input class="${inputCls}" value="22k gold jewellery, bridal gold, diamond jewellery">`)}${footer(outline("Cancel")+`<button data-act2="doCampaign" class="green h-10 px-4 rounded-md text-sm font-medium">Launch</button>`)}`);break;
+   case"doCampaign":{if(D.halted){close();toast("Emergency stop is on","Resume before launching.");return;}const r={id:"a"+Date.now(),name:document.getElementById("nc-name").value||"New campaign",cid:"JW-00"+(D.runs.length+2),src:document.getElementById("nc-src").value,last:new Date().toISOString(),searched:0,neu:0,dup:0,cost:"$0.00",status:"Running",next:"—"};D.runs.unshift(r);close();render();toast("Campaign started: "+r.cid,r.name);
+     setTimeout(()=>{Object.assign(r,{status:"Completed",searched:96,neu:7,dup:19,cost:"$0.88"});render();toast("Campaign finished: "+r.cid,"7 new leads, 19 duplicates filtered");},2500);break;}
+   case"saveAgent":toast("Research agent saved","New thresholds apply to the next run.");break;
+   case"clearAct":D.act={q:"",type:"All",user:"All"};render();break;
+  }
+});
+document.addEventListener("change",e=>{
+  const t=e.target;
+  if(t.dataset.f2){D[t.dataset.f2]=t.value;render();}
+  if(t.dataset.reclass){const p=D.posts.find(x=>x.id===t.dataset.reclass);p.cat=t.value;render();toast("Post reclassified as "+t.value);}
+  if(t.dataset.actf){D.act[t.dataset.actf]=t.value;render();}
+  if(t.dataset.pdf&&t.files[0]){const n=t.files[0].name;if(t.dataset.pdf==="brand")fakeScan(n,"PDF");else{const p={id:"e"+Date.now(),name:"Manual PDF Upload — "+n,url:"",lastRead:new Date().toISOString(),events:[{id:"v"+Date.now(),name:"Bayside Jewellery Week",date:"2027-02-02",type:"Jewellery exhibition",status:"pending_review"}]};D.pages.push(p);render();toast("Calendar read: "+n,"1 event found and waiting for a decision.");}t.value="";}
+});
+render();
+</script>
+
+</body></html>
